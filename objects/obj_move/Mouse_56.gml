@@ -1,1 +1,3 @@
-selected = false
+if (selected != 3) {
+	selected = false
+}

@@ -33,7 +33,7 @@ for (var _i = 0; _i < array_length(menu_text); _i++){
 		if (mouse_check_button_pressed(mb_left)){
 			switch menu_text[_i]{
 				case menu_text[0]:
-					show_message("NÃO TEM JOGO");
+					room_goto(1);
 					break;
 				case menu_text[1]:
 					show_message("NÃO TEM OPÇÕES");
