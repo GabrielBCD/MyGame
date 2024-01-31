@@ -33,7 +33,9 @@ for (var _i = 0; _i < array_length(menu_text); _i++){
 		if (mouse_check_button_pressed(mb_left)){
 			switch menu_text[_i]{
 				case menu_text[0]:
-					instance_create_layer(1,1,"Instances", obj_transition)
+					instance_create_layer(1,1,"Instances", obj_transition, {
+						room_prox: rm_teste
+						});
 					break;
 				case menu_text[1]:
 					show_message("NÃO TEM OPÇÕES");

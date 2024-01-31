@@ -2,7 +2,7 @@ switch (img_state){
 	case 1: //Inicio
 		img_index += img_speed;
 		if (img_index - img_max > col){
-			room_goto_next();
+			room_goto(room_prox);
 			img_state = 0;
 		}
 		break;

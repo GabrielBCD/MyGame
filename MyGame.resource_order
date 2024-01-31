@@ -22,6 +22,7 @@
     {"name":"obj_controller","order":2,"path":"objects/obj_controller/obj_controller.yy",},
     {"name":"obj_move","order":3,"path":"objects/obj_move/obj_move.yy",},
     {"name":"obj_transition","order":1,"path":"objects/obj_transition/obj_transition.yy",},
+    {"name":"obj_teste","order":2,"path":"objects/obj_teste/obj_teste.yy",},
     {"name":"spr_quad_oco_vermelho","order":6,"path":"sprites/spr_quad_oco_vermelho/spr_quad_oco_vermelho.yy",},
     {"name":"spr_quad_oco_azul","order":8,"path":"sprites/spr_quad_oco_azul/spr_quad_oco_azul.yy",},
     {"name":"obj_encaixe","order":4,"path":"objects/obj_encaixe/obj_encaixe.yy",},

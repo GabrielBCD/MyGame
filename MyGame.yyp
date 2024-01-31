@@ -41,6 +41,7 @@
     {"id":{"name":"obj_move","path":"objects/obj_move/obj_move.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"obj_transition","path":"objects/obj_transition/obj_transition.yy",},},
+    {"id":{"name":"obj_teste","path":"objects/obj_teste/obj_teste.yy",},},
     {"id":{"name":"spr_quad_oco_vermelho","path":"sprites/spr_quad_oco_vermelho/spr_quad_oco_vermelho.yy",},},
     {"id":{"name":"instance_position_top","path":"scripts/instance_position_top/instance_position_top.yy",},},
     {"id":{"name":"spr_quad_oco_azul","path":"sprites/spr_quad_oco_azul/spr_quad_oco_azul.yy",},},
