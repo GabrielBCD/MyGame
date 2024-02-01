@@ -1,6 +1,6 @@
 //Centro da câmera
-var _xgui = display_get_gui_width() / 2;
-var _ygui = display_get_gui_height() / 2;
+var _xgui = display_get_gui_width() / 8;
+var _ygui = display_get_gui_height() / 1.5;
 
 //Posição do mouse na GUI
 var _mx = device_mouse_x_to_gui(0);
@@ -8,7 +8,7 @@ var _my = device_mouse_y_to_gui(0);
 
 //Configurando texto
 draw_set_font(fnt_menu);
-draw_set_halign(fa_center);
+draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
 
 //Menu
@@ -19,11 +19,14 @@ for (var _i = 0; _i < array_length(menu_text); _i++){
 	var _str_size_y = string_height("I");
 	
 	//posição do retangudo dos textos
-	var _x1 = _xgui - _str_size_x / 2;
-	var _y1 = _ygui - _str_size_y / 2 + _str_size_y * _i;
+	var _x1 = (_xgui + _str_size_x / 2) - (_str_size_x / 2);
+	var _y1 = _ygui - (_str_size_y / 2) + _str_size_y * _i;
 	
-	var _x2 = _xgui + _str_size_x / 2;
-	var _y2 = _ygui + _str_size_y / 2 + _str_size_y * _i;
+	var _x2 =(_xgui + _str_size_x / 2) + (_str_size_x / 2);
+	var _y2 = _ygui + (_str_size_y / 2) + _str_size_y * _i;
+	
+	draw_text(_x1,_y1, "-")
+	draw_text(_x2,_y2, "-")
 	
 	//hover no texto
 	if (point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2)){
@@ -36,6 +39,7 @@ for (var _i = 0; _i < array_length(menu_text); _i++){
 					instance_create_layer(1,1,"Instances", obj_transition, {
 						room_prox: rm_teste
 						});
+					instance_destroy(id);
 					break;
 				case menu_text[1]:
 					show_message("NÃO TEM OPÇÕES");
