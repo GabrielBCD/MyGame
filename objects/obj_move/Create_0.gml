@@ -1,4 +1,4 @@
-selected = false;
+state = false;
 image_speed = 0;
 depth = 1;
 spawn_x = x;

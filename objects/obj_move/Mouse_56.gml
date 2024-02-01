@@ -1,3 +1,3 @@
-if (selected != 3) {
-	selected = false
+if (state != 3) {
+	state = 2
 }

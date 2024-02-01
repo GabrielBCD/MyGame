@@ -28,6 +28,7 @@ for (var _i = 0; _i < array_length(menu_text); _i++){
 	//hover no texto
 	if (point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2)){
 		text_escale[_i] = lerp(text_escale[_i], 1.4, 0.1);
+		text_color = c_yellow;
 		
 		if (mouse_check_button_pressed(mb_left)){
 			switch menu_text[_i]{
@@ -54,10 +55,10 @@ for (var _i = 0; _i < array_length(menu_text); _i++){
 	}
 
 		
-	draw_text_transformed_color(_xgui, _ygui + ((_str_size_y + 10) * _i), menu_text[_i], text_escale[_i] , text_escale[_i], image_angle, text_color, text_color , c_white , c_white,image_alpha);
+	draw_text_transformed_color(_xgui, _ygui + ((_str_size_y + 10) * _i), menu_text[_i], text_escale[_i] , text_escale[_i], image_angle, text_color, text_color , text_color , text_color,image_alpha);
 }
 
 //Resetando configurações de texto
 draw_set_halign(-1);
 draw_set_valign(-1);
-draw_set_font(fnt_menu);
+draw_set_font(-1);

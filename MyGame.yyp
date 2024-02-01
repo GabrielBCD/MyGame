@@ -48,6 +48,7 @@
     {"id":{"name":"obj_encaixe","path":"objects/obj_encaixe/obj_encaixe.yy",},},
     {"id":{"name":"obj_encaixe2","path":"objects/obj_encaixe2/obj_encaixe2.yy",},},
     {"id":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},},
+    {"id":{"name":"spr_fundo","path":"sprites/spr_fundo/spr_fundo.yy",},},
     {"id":{"name":"spr_quad_azul","path":"sprites/spr_quad_azul/spr_quad_azul.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"obj_move2","path":"objects/obj_move2/obj_move2.yy",},},
@@ -55,6 +56,7 @@
     {"id":{"name":"spr_ret_amarelo","path":"sprites/spr_ret_amarelo/spr_ret_amarelo.yy",},},
     {"id":{"name":"spr_quadrado_branco","path":"sprites/spr_quadrado_branco/spr_quadrado_branco.yy",},},
     {"id":{"name":"instance_position_top2","path":"scripts/instance_position_top2/instance_position_top2.yy",},},
+    {"id":{"name":"spr_logo","path":"sprites/spr_logo/spr_logo.yy",},},
     {"id":{"name":"rm_teste","path":"rooms/rm_teste/rm_teste.yy",},},
   ],
   "RoomOrderNodes": [
