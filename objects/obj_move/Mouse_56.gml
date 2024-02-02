@@ -1,3 +1,1 @@
-if (state != 3) {
-	state = 2
-}
+state = 2;

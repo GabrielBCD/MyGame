@@ -12,9 +12,9 @@ switch state{
 		depth = -1;
 		break;
 	case 2: //Logo após ser solto pelo mouse
-		if (instance_place(x,y,obj_encaixe)){
-			x = obj_encaixe.x;
-			y = obj_encaixe.y;
+		if (instance_place(x,y,colisor)){
+			x = colisor.x;
+			y = colisor.y;
 			state = 3;
 		} else {
 			state = 0;	
@@ -27,3 +27,4 @@ switch state{
 		depth = 0;
 		break;
 }
+
