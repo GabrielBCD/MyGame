@@ -1,3 +1,18 @@
+var _instance = instance_position(mouse_x, mouse_y, object_index);
+
+if (_instance){
+	var _mouse_check = mouse_check_button_pressed(mb_left) -  mouse_check_button_released(mb_left);
+	if (_mouse_check == 1){
+		state = 1;
+	}
+	if (_mouse_check = -1 and state == 1){
+		state = 2;
+	}
+} else{
+	state = 0;
+}
+
+
 switch(state){
 	case 0: //no click
 		image_index = 0;
@@ -7,10 +22,6 @@ switch(state){
 		break;
 	case 2: //stop clicking
 		image_index = 0;
-		if (!instance_exists(obj_transition)){
-			instance_create_layer(x,y,layer, obj_transition, {room_prox: rm_inicial});
-		}
-		
+		transition(room_prox);
 		break;
 }
-

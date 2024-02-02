@@ -30,12 +30,10 @@ for (var _i = 0; _i < array_length(menu_text); _i++){
 		text_escale[_i] = lerp(text_escale[_i], 1.4, 0.1);
 		text_color = c_yellow;
 		
-		if (mouse_check_button_pressed(mb_left) and !instance_exists(obj_transition)){
+		if (mouse_check_button_pressed(mb_left)){
 			switch menu_text[_i]{
 				case menu_text[0]:
-					instance_create_layer(1,1,"Instances", obj_transition, {
-						room_prox: rm_levels
-						});
+					transition(rm_levels)
 					break;
 				case menu_text[1]:
 					break;

@@ -5,13 +5,12 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_levels_gui",
-    "path": "folders/Objetos/obj_levels_gui.yy",
+    "name": "Objetos Interface",
+    "path": "folders/Objetos/Objetos Interface.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_gui_arrow_left",
-    "path": "sprites/spr_gui_arrow_left/spr_gui_arrow_left.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
