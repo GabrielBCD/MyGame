@@ -24,6 +24,10 @@ var _mv = 0;
 switch (state){
 	case "idle":
 		sprite_index = spr_idle[ft]
+		if (_lef)	ft = 0
+		if (_rig)	ft = 1
+		if (_up)	ft = 2
+		if (_down)	ft = 3
 		break;
 	case "walking":
 		if (move_direction == 0)	{_mv = 1; ft = 1}	

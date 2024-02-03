@@ -1,3 +1,4 @@
+//Pausa o jogo durante a tela de gameplay
 pause = false;
 pauseSurf = -1;
 pauseSurfBuff = -1;

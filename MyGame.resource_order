@@ -95,6 +95,7 @@
     {"name":"_23_Television_and_Film_Studio_Black_Shadow_32x32","order":22,"path":"sprites/_23_Television_and_Film_Studio_Black_Shadow_32x32/_23_Television_and_Film_Studio_Black_Shadow_32x32.yy",},
     {"name":"obj_select_level","order":1,"path":"objects/obj_select_level/obj_select_level.yy",},
     {"name":"_12_Kitchen_Black_Shadow_32x32","order":11,"path":"sprites/_12_Kitchen_Black_Shadow_32x32/_12_Kitchen_Black_Shadow_32x32.yy",},
+    {"name":"obj_level","order":4,"path":"objects/obj_level/obj_level.yy",},
     {"name":"tile_floor","order":2,"path":"tilesets/tile_floor/tile_floor.yy",},
     {"name":"_24_Ice_Cream_Shop_Black_Shadow_32x32","order":23,"path":"sprites/_24_Ice_Cream_Shop_Black_Shadow_32x32/_24_Ice_Cream_Shop_Black_Shadow_32x32.yy",},
     {"name":"spr_ret_amarelo","order":4,"path":"sprites/spr_ret_amarelo/spr_ret_amarelo.yy",},

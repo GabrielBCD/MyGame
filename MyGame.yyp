@@ -131,6 +131,7 @@
     {"id":{"name":"obj_select_level","path":"objects/obj_select_level/obj_select_level.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"_12_Kitchen_Black_Shadow_32x32","path":"sprites/_12_Kitchen_Black_Shadow_32x32/_12_Kitchen_Black_Shadow_32x32.yy",},},
+    {"id":{"name":"obj_level","path":"objects/obj_level/obj_level.yy",},},
     {"id":{"name":"obj_move3","path":"objects/obj_move3/obj_move3.yy",},},
     {"id":{"name":"obj_arvore","path":"objects/obj_arvore/obj_arvore.yy",},},
     {"id":{"name":"tile_floor","path":"tilesets/tile_floor/tile_floor.yy",},},
