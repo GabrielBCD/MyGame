@@ -1,7 +1,10 @@
-menu_text = ["JOGAR", "OPÇÕES", "CRÉDITOS" ,"SAIR"];
-text_escale[array_length(menu_text) - 1] = 0;
-text_color = c_white;
+menu_text[0,0] = "JOGAR";
+menu_text[0,1] = "OPÇÕES";
+menu_text[0,2] = "CRÉDITOS";
+menu_text[0,3] = "SAIR";
 
-for (var _i = 0; _i < array_length(text_escale); _i++){
-	text_escale[_i] = 1;
-}
+menu_text[1,0] = "SOM";
+menu_text[1,1] = "GRAFICOS";
+menu_text[1,2] = "VOLTAR";
+
+menu = "Principal";

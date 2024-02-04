@@ -6,7 +6,7 @@ var _check = _rig or _lef or _up	or _down;
 
 if (_check){
 	move_direction = point_direction(0, 0,(_rig - _lef), (_down - _up))
-	vel = lerp(vel, max_vel, .4);
+	vel = lerp(vel, max_vel, .2);
 } else {
 	vel = lerp(vel, 0, .8);
 }	
