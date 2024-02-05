@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_gui_select_level",
+  "name": "spr_select_level1",
   "bbox_bottom": 255,
   "bbox_left": 0,
   "bbox_right": 255,
@@ -15,11 +15,12 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e4882db7-15f8-4df1-bb04-21df98c882f7",},
   ],
-  "gridX": 0,
-  "gridY": 0,
+  "gridX": 4,
+  "gridY": 4,
   "height": 256,
   "HTile": false,
   "layers": [
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4d29021d-882c-4722-9994-fb72e3bc0f32","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"aa65c3e2-af8b-4f2a-9d38-4577e70fa127","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
@@ -32,7 +33,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_gui_select_level",
+    "name": "spr_select_level1",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +55,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e4882db7-15f8-4df1-bb04-21df98c882f7","path":"sprites/spr_gui_select_level/spr_gui_select_level.yy",},},},"Disabled":false,"id":"5c832bf5-6fdb-4d73-9299-3a5b03f3326e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e4882db7-15f8-4df1-bb04-21df98c882f7","path":"sprites/spr_select_level1/spr_select_level1.yy",},},},"Disabled":false,"id":"4dff5f82-5b25-4cdd-85b7-00224fdeb5c9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

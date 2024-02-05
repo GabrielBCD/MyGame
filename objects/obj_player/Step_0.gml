@@ -2,11 +2,11 @@ var _rig =	keyboard_check(ord("D"));
 var _lef =	keyboard_check(ord("A"));
 var _up =	keyboard_check(ord("W"));
 var _down = keyboard_check(ord("S"));
-var _check = _rig or _lef or _up	or _down;
+var _check = _rig or _lef or _up or _down;
 
 if (_check){
 	move_direction = point_direction(0, 0,(_rig - _lef), (_down - _up))
-	vel = lerp(vel, max_vel, .2);
+	vel = lerp(vel, max_vel, .5);
 } else {
 	vel = lerp(vel, 0, .8);
 }	
@@ -40,4 +40,10 @@ switch (state){
 		if (move_direction == 315)	{_mv = 1; ft = 1}	
 		sprite_index = spr_walking[_mv]
 		break;
+}
+
+if (vel == max_vel){
+	image_speed = 1.2;
+} else {
+	image_speed = 1;
 }

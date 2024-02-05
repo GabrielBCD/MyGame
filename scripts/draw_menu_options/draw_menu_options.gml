@@ -2,35 +2,48 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 function draw_menu_options(_matriz, _linha, _i){
 	
-	if (_linha == 0){
-		if (mouse_check_button_pressed(mb_left)){
-			switch _matriz[_linha, _i]{
-				case _matriz[_linha,0]:
-					transition(rm_levels)
-					break;
-				case _matriz[_linha,1]:
-					menu = "Sub-Menu"
-					break;
-				case _matriz[_linha,2]:
-					break;
-				case _matriz[_linha,3]:
-					game_end();
-					break;
+switch (menu){
+	case "Principal":
+		if (instance_exists(obj_submenu)) instance_destroy(obj_submenu);
+		
+		if (_linha == 0){
+			if (mouse_check_button_pressed(mb_left)){
+				switch _matriz[_linha, _i]{
+					case _matriz[_linha,0]: //Jogar
+						transition(rm_levels)
+						break;
+					case _matriz[_linha,1]: //Opções
+						menu = "Sub-Menu"
+						break;
+					case _matriz[_linha,2]: //Créditos
+						break;
+					case _matriz[_linha,3]: //Sair
+						game_end();
+						break;
+				}
 			}
 		}
-	}
-	
-	if (_linha == 1){
-		if (mouse_check_button_pressed(mb_left)){
-			switch _matriz[_linha, _i]{
-				case _matriz[_linha,0]:
-					break;
-				case _matriz[_linha,1]:
-					break;
-				case _matriz[_linha,2]:
-					menu = "Principal"
-					break;
+	break;
+	case "Sub-Menu":
+		if (_linha == 1){
+			if (mouse_check_button_pressed(mb_left)){
+				switch _matriz[_linha, _i]{
+					case _matriz[_linha,0]: //Som
+						if (!instance_exists(obj_submenu)){
+							instance_create_layer(display_get_width() / 4, display_get_height() / 4, layer, obj_submenu)		
+						}
+						break;
+					case _matriz[_linha,1]: //Gráficos
+						if (!instance_exists(obj_submenu)){
+							instance_create_layer(display_get_width() / 4, display_get_height() / 4, layer, obj_submenu)		
+						}
+						break;
+					case _matriz[_linha,2]: //Voltar
+						menu = "Principal"
+						break;
+				}
 			}
-		}
-	}		
+		}		
+	break;
+}
 }

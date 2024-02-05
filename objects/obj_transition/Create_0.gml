@@ -1,6 +1,6 @@
 size = sprite_get_width(spr_quadrado_branco);
-col = room_width / size;
-row = ceil(room_height / size);
+col = display_get_gui_width() / size;
+row = ceil(display_get_gui_height() / size);
 depth = -999;
 img_state = 1;
 img_index = 0;

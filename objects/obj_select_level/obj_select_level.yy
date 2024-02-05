@@ -3,15 +3,17 @@
   "resourceVersion": "1.0",
   "name": "obj_select_level",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos Interface",
-    "path": "folders/Objetos/Objetos Interface.yy",
+    "name": "Objetos Levels",
+    "path": "folders/Objetos/Objetos Levels.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -31,10 +33,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"level","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,
-  "spriteId": {
-    "name": "spr_gui_select_level",
-    "path": "sprites/spr_gui_select_level/spr_gui_select_level.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
