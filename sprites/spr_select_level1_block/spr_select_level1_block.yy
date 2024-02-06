@@ -28,8 +28,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "interface",
-    "path": "folders/Sprites/interface.yy",
+    "name": "level icons",
+    "path": "folders/Sprites/interface/level icons.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

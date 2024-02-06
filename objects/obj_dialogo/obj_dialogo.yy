@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_arvore",
-  "eventList": [],
+  "name": "obj_dialogo",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos de decorativos",
-    "path": "folders/Objetos/Objetos Mapa/Objetos de decorativos.yy",
+    "name": "NPC",
+    "path": "folders/Objetos/NPC.yy",
   },
-  "parentObjectId": {
-    "name": "obj_visible",
-    "path": "objects/obj_visible/obj_visible.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_arvore",
-    "path": "sprites/spr_arvore/spr_arvore.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

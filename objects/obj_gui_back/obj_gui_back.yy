@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos Interface",
-    "path": "folders/Objetos/Objetos Interface.yy",
+    "name": "Interface",
+    "path": "folders/Objetos/Interface.yy",
   },
   "parentObjectId": null,
   "persistent": false,

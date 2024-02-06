@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos Mapa",
-    "path": "folders/Objetos/Objetos Mapa.yy",
+    "name": "Mapa",
+    "path": "folders/Objetos/Mapa.yy",
   },
   "parentObjectId": {
     "name": "obj_colisor_1",

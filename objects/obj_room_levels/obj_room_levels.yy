@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos Levels",
-    "path": "folders/Objetos/Objetos Levels.yy",
+    "name": "Levels",
+    "path": "folders/Objetos/Levels.yy",
   },
   "parentObjectId": null,
   "persistent": false,
