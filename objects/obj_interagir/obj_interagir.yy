@@ -31,10 +31,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_arvore",
-    "path": "sprites/spr_arvore/spr_arvore.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

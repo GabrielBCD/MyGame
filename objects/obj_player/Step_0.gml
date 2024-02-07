@@ -2,39 +2,26 @@ var _rig =	keyboard_check(ord("D"));
 var _lef =	keyboard_check(ord("A"));
 var _up =	keyboard_check(ord("W"));
 var _down = keyboard_check(ord("S"));
-var _move = instance_exists(obj_dialogo)
-var _check = (_rig or _lef or _up or _down) and !_move;
 
+var _talk = instance_exists(obj_dialogo_npc) or instance_exists(obj_dialogo_interacao);
+var _move = hspd != 0 or vspd != 0;
 
-if (_check){
-	move_direction = point_direction(0, 0,(_rig - _lef), (_down - _up))
-	vel = lerp(vel, max_vel, .5);
-} else {
-	vel = lerp(vel, 0, .8);
-}	
-
-if (hspd != 0 or vspd != 0){
-	state = "walking";
-} else {
-	state = "idle";	
-}
-
-hspd = lengthdir_x(vel, move_direction);
-vspd = lengthdir_y(vel, move_direction);
+if			(_talk)		state = "talking";
+else if		(_move)		state = "move";
+else					state = "idle";
 
 var _mv = 0;
 switch (state){
 	case "idle":
+		move(_rig, _lef, _up, _down)
 		sprite_index = spr_idle[ft]
-		if (!_move){
-			if (_lef)	ft = 0
-			if (_rig)	ft = 1
-			if (_up)	ft = 2
-			if (_down)	ft = 3				
-		}
-
+		if (_lef)	ft = 0
+		if (_rig)	ft = 1
+		if (_up)	ft = 2
+		if (_down)	ft = 3				
 		break;
-	case "walking":
+	case "move":
+		move(_rig, _lef, _up, _down)
 		if (move_direction == 0)	{_mv = 1; ft = 1}	
 		if (move_direction == 45)	{_mv = 1; ft = 1}	
 		if (move_direction == 90)	{_mv = 2; ft = 2}	
@@ -44,6 +31,10 @@ switch (state){
 		if (move_direction == 270)	{_mv = 3; ft = 3}	
 		if (move_direction == 315)	{_mv = 1; ft = 1}	
 		sprite_index = spr_walking[_mv]
+		break;
+	case "talking":
+		no_move();
+		sprite_index = spr_idle[ft];
 		break;
 }
 

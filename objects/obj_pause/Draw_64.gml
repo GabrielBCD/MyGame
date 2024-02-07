@@ -3,7 +3,7 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 
 if (pause){
-	draw_sprite(spr_pause, 0, 1,1);
+	draw_sprite(spr_pause, 0,0,0);
 	
 	//Configurando texto
 	draw_text(xgui / 2, ygui / 4, "GAME PAUSE");
