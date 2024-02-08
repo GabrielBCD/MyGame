@@ -11,7 +11,10 @@
     "name": "Mapa",
     "path": "folders/Objetos/Mapa.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_visible",
+    "path": "objects/obj_visible/obj_visible.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

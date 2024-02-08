@@ -1,4 +1,4 @@
-animation = true;
+animation = true and not (instance_exists(obj_confirm_level));
 
 if (animation){
 	//Se o alarme NÃO estiver em execução ou falanto 1 FRAME para acabar

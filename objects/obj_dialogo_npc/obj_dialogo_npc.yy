@@ -31,6 +31,7 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"mensagens","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":6,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_header","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"npc_name","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"\"\"","varType":2,},
   ],
   "solid": false,
   "spriteId": null,

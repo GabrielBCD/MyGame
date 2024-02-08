@@ -1,5 +1,5 @@
 if (!text_complete){
-	indice_spr ++;
+	indice_spr += .2;
 	if (indice_spr > indice_spr_max){
 		indice_spr = 0;	
 	}

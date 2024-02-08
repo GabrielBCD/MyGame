@@ -1,15 +1,15 @@
 i = 0;
 
-char_prox = 0;
+char_prox = 1;
 pause = 0;
 fala = "";
 text_complete = 0
-indice_spr = 0;
+indice_spr = choose(1,3,5);
 indice_spr_max = sprite_get_number(sprite_header);
 
 reset = function(){
 	fala = "";
-	char_prox = 0;
+	char_prox = 1;
 }
 
 skip = function(){
@@ -23,16 +23,15 @@ draw_image = function(){
 
 dialog_draw = function(_fala, _size){
 	draw_set_font(fnt_dialog);
-	draw_text_ext_transformed(455, 560, _fala, 22, 520, _size, _size, 0)
+	draw_text_ext_transformed(450, 560, $"{npc_name}:", 22, 520, _size/1.2, _size/1.2, 0)
+	draw_text_ext_transformed(450, 582, _fala, 22, 530, _size, _size, 0)
 }
 
 pause_draw = function(_char_atual, _char_pause){
 	for (var _i = 0; _i < array_length(_char_pause); _i ++){
 		if (_char_atual == _char_pause[_i]){
 			pause = 1;
-			if (alarm[0] == -1 or alarm[0] == 0){
-				alarm[0] = 60;
-			}
+			alarm[0] = 30;
 		}		
 	}
 }

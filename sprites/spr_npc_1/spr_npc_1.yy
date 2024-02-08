@@ -30,8 +30,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "NPC",
-    "path": "folders/Sprites/NPC.yy",
+    "name": "npc_level1",
+    "path": "folders/Sprites/NPC/npc_level1.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

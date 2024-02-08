@@ -1,7 +1,7 @@
-var _instance = instance_position(mouse_x, mouse_y, object_index);
+var _instance = instance_position(mouse_x, mouse_y, self);
 
 if (_instance){
-	var _mouse_check = mouse_check_button_pressed(mb_left) -  mouse_check_button_released(mb_left);
+	var _mouse_check = mouse_check_button_pressed(mb_left) - mouse_check_button_released(mb_left);
 	if (_mouse_check == 1){
 		state = 1;
 	}
@@ -22,6 +22,6 @@ switch(state){
 		break;
 	case 2: //stop clicking
 		image_index = 0;
-		transition(room_prox);
+		action();
 		break;
 }

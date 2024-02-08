@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mapa",
-    "path": "folders/Objetos/Mapa.yy",
+    "name": "Controllers",
+    "path": "folders/Objetos/Controllers.yy",
   },
   "parentObjectId": {
     "name": "obj_visible",

@@ -24,13 +24,14 @@ switch (pause){
 			}
 		} 
 		else {
-			char_prox++;
 			pause_draw(_char_atual, _char_pause);
 			if (_space){
 				skip();
-			} else {			
+			} else {
 				fala += string_char_at(_mensagem, char_prox);
+				char_prox++;
 			}
+
 		}
 		break;
 	case 1:
@@ -45,6 +46,7 @@ switch (pause){
 				}
 			}
 		} else {
+
 			if (_space){
 				skip();
 			}
