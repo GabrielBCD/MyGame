@@ -6,12 +6,12 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Mapa",
-    "path": "folders/Objetos/Mapa.yy",
+    "name": "Paredes",
+    "path": "folders/Objetos/Mapa/Paredes.yy",
   },
   "parentObjectId": {
-    "name": "obj_parede_meio",
-    "path": "objects/obj_parede_meio/obj_parede_meio.yy",
+    "name": "obj_parede_borda",
+    "path": "objects/obj_parede_borda/obj_parede_borda.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

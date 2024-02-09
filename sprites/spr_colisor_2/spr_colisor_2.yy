@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"dde0bc5a-79dc-47ef-b36b-616cf9401143","blendMode":0,"displayName":"default","isLocked":false,"opacity":20.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 3,
   "parent": {
     "name": "colisores",
     "path": "folders/Sprites/player/colisores.yy",
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 8,
+    "xorigin": 0,
     "yorigin": 8,
   },
   "swatchColours": null,
