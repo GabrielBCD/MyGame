@@ -1,12 +1,13 @@
 set_config_text();
 
-var _mensagem = mensagens[i];
-text_complete = (string_length(fala) >= string_length(_mensagem));
+mensagem = mensagens[i];
+text_complete = (string_length(fala) >= string_length(mensagem));
+
 var _space = keyboard_check_pressed(vk_space);
 var _prox_mesage = i < array_length(mensagens) - 1;
 
-var _char_atual = string_char_at(_mensagem, char_prox)
-var _char_pause = [".", ",", "!", "?", ":", ";", "/"]
+char_atual = string_char_at(mensagem, char_prox)
+
 
 draw_image();
 dialog_draw(fala, 1);
@@ -24,12 +25,10 @@ switch (pause){
 			}
 		} 
 		else {
-			pause_draw(_char_atual, _char_pause);
 			if (_space){
 				skip();
 			} else {
-				fala += string_char_at(_mensagem, char_prox);
-				char_prox++;
+				char_prox_delay();
 			}
 
 		}
@@ -45,8 +44,8 @@ switch (pause){
 					instance_destroy();	
 				}
 			}
-		} else {
-
+		} 
+else {
 			if (_space){
 				skip();
 			}

@@ -2,10 +2,17 @@ i = 0;
 
 char_prox = 1;
 pause = 0;
-fala = "";
 text_complete = 0
+fala = "";
+mensagem = "";
+
+char_pause = [".", ",", "!", "?", ":", ";"];
+char_atual = "";
+
 indice_spr = choose(1,3,5);
 indice_spr_max = sprite_get_number(sprite_header);
+
+
 
 reset = function(){
 	fala = "";
@@ -13,6 +20,7 @@ reset = function(){
 }
 
 skip = function(){
+	alarm[1] = -1;
 	fala = mensagens[i];
 }
 
@@ -25,6 +33,13 @@ dialog_draw = function(_fala, _size){
 	draw_set_font(fnt_dialog);
 	draw_text_ext_transformed(450, 560, $"{npc_name}:", 22, 520, _size/1.2, _size/1.2, 0)
 	draw_text_ext_transformed(450, 582, _fala, 22, 530, _size, _size, 0)
+}
+
+char_prox_delay = function(){
+	if (alarm[1] == -1 or alarm[1] == 0){
+		pause = 1
+		alarm[1] = 2.5;
+	}
 }
 
 pause_draw = function(_char_atual, _char_pause){
