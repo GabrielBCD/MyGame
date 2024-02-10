@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "testes",
-    "path": "folders/Objetos/testes.yy",
+    "name": "objetos de fase",
+    "path": "folders/Objetos/objetos de fase.yy",
   },
   "parentObjectId": null,
   "persistent": false,

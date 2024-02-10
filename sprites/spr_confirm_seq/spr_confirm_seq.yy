@@ -3,9 +3,9 @@
   "resourceVersion": "1.0",
   "name": "spr_confirm_seq",
   "bbox_bottom": 509,
-  "bbox_left": 50,
-  "bbox_right": 619,
-  "bbox_top": 34,
+  "bbox_left": 51,
+  "bbox_right": 612,
+  "bbox_top": 41,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "interface",
-    "path": "folders/Sprites/interface.yy",
+    "name": "level",
+    "path": "folders/Sprites/interface/level.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

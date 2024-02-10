@@ -1,13 +1,16 @@
 switch state{
 	case 0: //não selecionado
-		x = lerp(x, spawn_x, .5)	
-		y = lerp(y, spawn_y, .5)	
+		x = lerp(x, spawn_x, lerp_)	
+		y = lerp(y, spawn_y, lerp_)	
 		image_index = 0;
+		selected_draw = false;
 		depth = 0;
 		break;
 	case 1: //selecionado
-		x = lerp(x, mouse_x, .5) 
-		y = lerp(y, mouse_y, .5)
+		x = mouse_x
+		y = mouse_y
+		selected_draw = true;
+		cursor_sprite = spr_mouse_move;
 		image_index = 1;
 		depth = -1;
 		break;
@@ -17,7 +20,7 @@ switch state{
 			y = colisor.y;
 			state = 3;
 		} else {
-			state = 0;	
+			state = 0;
 		}
 		break;
 	case 3: //encaixado

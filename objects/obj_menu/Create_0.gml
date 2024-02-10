@@ -7,4 +7,6 @@ menu_text[1,0] = "SOM";
 menu_text[1,1] = "GRAFICOS";
 menu_text[1,2] = "VOLTAR";
 
+menu_bug = ["D$*&T","YuM*<E", "LwGQ%","AKlWi"]
+
 menu = "Principal";

@@ -20,14 +20,14 @@
   "height": 533,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6e0deb14-01b0-4777-86e1-bb56963a24fb","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":false,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6e0deb14-01b0-4777-86e1-bb56963a24fb","blendMode":0,"displayName":"Layer 1","isLocked":true,"opacity":100.0,"visible":false,},
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1ac4f853-6eef-491c-bb06-a82fc2c56a18","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "interface",
-    "path": "folders/Sprites/interface.yy",
+    "name": "level",
+    "path": "folders/Sprites/interface/level.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

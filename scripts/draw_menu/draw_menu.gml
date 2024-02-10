@@ -33,7 +33,6 @@ function draw_menu(_matriz, _linha){
 		//hover no texto
 		if (point_in_rectangle(_mx, _my, _x1, _y1, _x2, _y2)){
 			text_escale[_i] = lerp(text_escale[_i], 1.4, 0.1);
-			show_debug_message(lerp(text_escale[_i], 1.4, 0.1))
 			text_color = c_yellow;
 			
 			draw_menu_options(_matriz, _linha, _i);
