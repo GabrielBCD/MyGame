@@ -7,4 +7,4 @@ if (_move){
 	cursor_sprite = mouse_cursor[0];
 } else {
 	cursor_sprite = mouse_cursor[0]
-}	
+}

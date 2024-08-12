@@ -1,5 +1,5 @@
 event_inherited();
 
 image_speed = 0;
-name = "Nenhum"
-desc = "Nenhum"
+name = "Peça 1"
+desc = "Sem Desc"

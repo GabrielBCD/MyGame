@@ -7,21 +7,26 @@ var _talk = instance_exists(obj_dialogo_npc) or instance_exists(obj_dialogo_inte
 var _move = hspd != 0 or vspd != 0;
 
 if			(_talk)		state = "talking";
-else if		(_move)		state = "move";
-else					state = "idle";
+
 
 var _mv = 0;
 switch (state){
 	case "idle":
+		if _move state = "move"
 		move(_rig, _lef, _up, _down)
-		sprite_index = spr_idle[ft]
+		
+		//sprites (melhorar dps)
 		if (_lef)	ft = 0
 		if (_rig)	ft = 1
 		if (_up)	ft = 2
-		if (_down)	ft = 3				
+		if (_down)	ft = 3
+		sprite_index = spr_idle[ft]
 		break;
 	case "move":
+		if !_move state = "idle"
 		move(_rig, _lef, _up, _down)
+		
+		//sprites (melhorar dps)
 		if (move_direction == 0)	{_mv = 1; ft = 1}	
 		if (move_direction == 45)	{_mv = 1; ft = 1}	
 		if (move_direction == 90)	{_mv = 2; ft = 2}	
@@ -34,6 +39,7 @@ switch (state){
 		break;
 	case "talking":
 		no_move();
+		if (instance_exists(obj_dialogo_npc)) state = "idle"
 		sprite_index = spr_idle[ft];
 		break;
 }

@@ -4,13 +4,13 @@ instance_create_layer(x,y,layer,obj_player_aura)
 
 //Moovimentação
 vel = 0;
-max_vel = 3;
+max_vel = 3.5;
 
 hspd = 0;
 vspd = 0;
 move_direction = 270;
 
-state = "";
+state = "idle";
 
 //sprites
 ft = 3;
