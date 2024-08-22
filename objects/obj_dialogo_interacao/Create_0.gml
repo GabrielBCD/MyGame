@@ -7,5 +7,5 @@ draw_image = function(){
 
 dialog_draw = function(_fala, _size){
 	draw_set_font(fnt_dialog);
-	draw_text_ext_transformed(384, 560, _fala, 22, 520, _size, _size, 0)
+	draw_text_ext_transformed(384, 570, _fala, 22, 520, _size, _size, 0)
 }

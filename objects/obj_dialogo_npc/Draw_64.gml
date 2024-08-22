@@ -6,7 +6,7 @@ text_complete = (string_length(fala) >= string_length(mensagem));
 var _space = keyboard_check_pressed(vk_space);
 var _prox_mesage = i < array_length(mensagens) - 1;
 
-char_atual = string_char_at(mensagem, char_prox)
+char_atual = string_char_at(mensagem, char_prox);
 
 
 draw_image();

@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_NPC_2",
+  "%Name":"obj_mesa_principal",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_NPC_2",
+  "name":"obj_mesa_principal",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPC",
-    "path":"folders/Objetos/NPC.yy",
+    "name":"Interativos",
+    "path":"folders/Objetos/Mapa/Interativos.yy",
   },
   "parentObjectId":{
     "name":"obj_interagir",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_2",
-    "path":"sprites/spr_npc_2/spr_npc_2.yy",
+    "name":"spr_pc_lvl1",
+    "path":"sprites/spr_pc_lvl1/spr_pc_lvl1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

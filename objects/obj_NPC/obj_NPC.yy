@@ -1,21 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_interact_level1",
+  "%Name":"obj_NPC",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_interact_level1",
+  "name":"obj_NPC",
   "overriddenProperties":[],
   "parent":{
-    "name":"level1",
-    "path":"folders/Objetos/objetos de fase/level1.yy",
+    "name":"NPC",
+    "path":"folders/Objetos/NPC.yy",
   },
   "parentObjectId":{
     "name":"obj_interagir",
     "path":"objects/obj_interagir/obj_interagir.yy",
   },
-  "persistent":false,
+  "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pc_lvl1",
-    "path":"sprites/spr_pc_lvl1/spr_pc_lvl1.yy",
+    "name":"spr_npc_2",
+    "path":"sprites/spr_npc_2/spr_npc_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

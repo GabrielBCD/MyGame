@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"instance_position_top",
   "isCompatibility":false,
   "isDnD":false,

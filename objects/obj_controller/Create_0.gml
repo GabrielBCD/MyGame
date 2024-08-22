@@ -1,7 +1,7 @@
-global.level = 2;
+global.level = 0;
 global.level_rooms = [rm_level1]
 
-desc_1 = $"    // Por algum motivo ele\n    // não quer ligar...";
+desc_1 = $"    // Sem Descrição\n    // no fichario...";
 desc_2 = "    //Sem Descrição";
 desc_3 = "    //Sem Descrição";
 desc_4 = "    //Sem Descrição";

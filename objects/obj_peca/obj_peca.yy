@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"obj_peca",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_peca",
@@ -29,8 +29,8 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"name","filters":[],"listItems":[],"multiselect":false,"name":"name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Nome Indefinido\"","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"desc","filters":[],"listItems":[],"multiselect":false,"name":"desc","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Descrição Indefinido\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"name","filters":[],"listItems":[],"multiselect":false,"name":"name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Nome Indefinido\"","varType":2,},
+    {"$GMObjectProperty":"","%Name":"desc","filters":[],"listItems":[],"multiselect":false,"name":"desc","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Descrição Indefinido\"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

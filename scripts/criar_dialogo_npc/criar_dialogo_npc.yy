@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"criar_dialogo_npc",
   "isCompatibility":false,
   "isDnD":false,

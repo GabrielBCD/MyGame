@@ -2,16 +2,16 @@
   "$GMObject":"",
   "%Name":"obj_dialogo_interacao",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_dialogo_interacao",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_dialogo_npc","path":"objects/obj_dialogo_npc/obj_dialogo_npc.yy",},"propertyId":{"name":"mensagens","path":"objects/obj_dialogo_npc/obj_dialogo_npc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_dialogo_npc","path":"objects/obj_dialogo_npc/obj_dialogo_npc.yy",},"propertyId":{"name":"mensagens","path":"objects/obj_dialogo_npc/obj_dialogo_npc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
-    "name":"NPC",
-    "path":"folders/Objetos/NPC.yy",
+    "name":"Interativos",
+    "path":"folders/Objetos/Mapa/Interativos.yy",
   },
   "parentObjectId":{
     "name":"obj_dialogo_npc",
