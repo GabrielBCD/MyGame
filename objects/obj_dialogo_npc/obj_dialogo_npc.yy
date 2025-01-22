@@ -12,8 +12,8 @@
   "name":"obj_dialogo_npc",
   "overriddenProperties":[],
   "parent":{
-    "name":"NPC",
-    "path":"folders/Objetos/NPC.yy",
+    "name":"Controllers",
+    "path":"folders/Objetos/Controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

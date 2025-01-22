@@ -1,1 +1,1 @@
-ds_grid_destroy(global.grid_depth)
+//ds_grid_destroy(global.grid_depth)

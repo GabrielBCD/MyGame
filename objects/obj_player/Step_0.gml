@@ -6,8 +6,8 @@ var _down = keyboard_check(ord("S"));
 var _talk = instance_exists(obj_dialogo_npc) or instance_exists(obj_dialogo_interacao);
 var _move = hspd != 0 or vspd != 0;
 
-if			(_talk)		state = "talking";
-
+if (_talk) state = "talking";
+if (room != rm_level_map) state = "menu"
 
 var _mv = 0;
 switch (state){
@@ -15,7 +15,6 @@ switch (state){
 		if _move state = "move"
 		move(_rig, _lef, _up, _down)
 		
-		//sprites (melhorar dps)
 		if (_lef)	ft = 0
 		if (_rig)	ft = 1
 		if (_up)	ft = 2
@@ -26,7 +25,6 @@ switch (state){
 		if !_move state = "idle"
 		move(_rig, _lef, _up, _down)
 		
-		//sprites (melhorar dps)
 		if (move_direction == 0)	{_mv = 1; ft = 1}	
 		if (move_direction == 45)	{_mv = 1; ft = 1}	
 		if (move_direction == 90)	{_mv = 2; ft = 2}	
@@ -38,10 +36,15 @@ switch (state){
 		sprite_index = spr_walking[_mv]
 		break;
 	case "talking":
+		if (!instance_exists(obj_dialogo_npc)) state = "idle"
 		no_move();
-		if (instance_exists(obj_dialogo_npc)) state = "idle"
 		sprite_index = spr_idle[ft];
 		break;
+	case "menu":
+		no_move()
+		if (room == rm_level_map) state = "idle"
+		break
+	
 }
 
 if (vel == max_vel){

@@ -1,5 +1,6 @@
-global.level = 0;
-global.level_rooms = [rm_level1]
+global.level = 5;
+global.level_rooms = [rm_level_map];
+instance_create_layer(x,y,layer, obj_depth)
 
 desc_1 = $"    // Sem Descrição\n    // no fichario...";
 desc_2 = "    //Sem Descrição";

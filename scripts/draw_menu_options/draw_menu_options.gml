@@ -10,7 +10,7 @@ switch (menu){
 			if (mouse_check_button_pressed(mb_left)){
 				switch _matriz[_linha, _i]{
 					case _matriz[_linha,0]: //Jogar
-						transition(rm_levels)
+						transition(rm_level_select)
 						break;
 					case _matriz[_linha,1]: //Opções
 						menu = "Sub-Menu"

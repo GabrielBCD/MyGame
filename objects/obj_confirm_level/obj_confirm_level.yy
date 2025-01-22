@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Levels.yy",
+    "path":"folders/Objetos/Menus/Levels.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,8 +29,11 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"room_prox","filters":[],"listItems":[],"multiselect":false,"name":"room_prox","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
+    {"$GMObjectProperty":"","%Name":"room_prox","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"name":"room_prox","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
     {"$GMObjectProperty":"","%Name":"desc","filters":[],"listItems":[],"multiselect":false,"name":"desc","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"","%Name":"level","filters":[],"listItems":[],"multiselect":false,"name":"level","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

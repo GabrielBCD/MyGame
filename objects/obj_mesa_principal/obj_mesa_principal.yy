@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_pc_lvl1",
-    "path":"sprites/spr_pc_lvl1/spr_pc_lvl1.yy",
+    "name":"spr_mesa_principal",
+    "path":"sprites/spr_mesa_principal/spr_mesa_principal.yy",
   },
   "spriteMaskId":null,
   "visible":true,

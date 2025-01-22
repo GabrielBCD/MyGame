@@ -34,8 +34,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"npc_level2",
-    "path":"folders/Sprites/NPC/npc_level2.yy",
+    "name":"npc_ajudante",
+    "path":"folders/Sprites/NPC/npc_ajudante.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

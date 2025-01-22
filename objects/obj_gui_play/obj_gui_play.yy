@@ -6,10 +6,12 @@
   ],
   "managed":true,
   "name":"obj_gui_play",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_gui_back","path":"objects/obj_gui_back/obj_gui_back.yy",},"propertyId":{"name":"room_prox","path":"objects/obj_gui_back/obj_gui_back.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+  ],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Levels.yy",
+    "path":"folders/Objetos/Menus/Levels.yy",
   },
   "parentObjectId":{
     "name":"obj_gui_back",
@@ -28,7 +30,9 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"level","filters":[],"listItems":[],"multiselect":false,"name":"level","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

@@ -1,5 +1,5 @@
 event_inherited();
 
 action = function(){
-	transition(rm_level1_1);
+	transition(rm_level_interact);
 }

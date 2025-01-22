@@ -1,4 +1,3 @@
-
 repeat(abs(hspd)){
 	if(!place_meeting(x + sign(hspd), y,obj_colisor_1)){
 		x += sign(hspd);
@@ -13,7 +12,6 @@ repeat(abs(vspd)){
 		vspd = 0
 	}
 }
-
 
 if !instance_exists(obj_player_aura){
 	instance_create_layer(x,y,layer, obj_player_aura)	

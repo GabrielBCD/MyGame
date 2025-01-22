@@ -10,8 +10,8 @@
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_dialogo_npc","path":"objects/obj_dialogo_npc/obj_dialogo_npc.yy",},"propertyId":{"name":"mensagens","path":"objects/obj_dialogo_npc/obj_dialogo_npc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
-    "name":"Interativos",
-    "path":"folders/Objetos/Mapa/Interativos.yy",
+    "name":"Controllers",
+    "path":"folders/Objetos/Controllers.yy",
   },
   "parentObjectId":{
     "name":"obj_dialogo_npc",

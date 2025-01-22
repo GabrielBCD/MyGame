@@ -8,7 +8,6 @@ var _prox_mesage = i < array_length(mensagens) - 1;
 
 char_atual = string_char_at(mensagem, char_prox);
 
-
 draw_image();
 dialog_draw(fala, 1);
 
@@ -23,8 +22,7 @@ switch (pause){
 					instance_destroy();	
 				}
 			}
-		} 
-		else {
+		} else {
 			if (_space){
 				skip();
 			} else {
@@ -44,8 +42,7 @@ switch (pause){
 					instance_destroy();	
 				}
 			}
-		} 
-else {
+		} else {
 			if (_space){
 				skip();
 			}
@@ -55,19 +52,5 @@ else {
 }
 
 reset_config_text();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

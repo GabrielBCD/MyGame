@@ -1,3 +1,5 @@
+//Este objeto cria as colunas e linhas de seleção de fase
+
 instance_create_layer(16,16,layer, obj_gui_back, {room_prox: rm_inicial, sprite_index: spr_gui_arrow_left});
 cow = 3;
 row = 1;
@@ -8,12 +10,14 @@ var _obj_size_x = sprite_get_width(spr_select_level);
 var _obj_size_y = sprite_get_height(spr_select_level);
 
 for (var _i = 0; _i < cow; _i++){
+	show_debug_message(_i);
 	instance_create_layer(_xgui + (_obj_size_x + 20) * _i, 104, layer, obj_select_level, {
-		level: (_i),
+		level: (_i), //atribuindo o número da fase desse bloco
 		});
 	for (var _j = 0; _j < row; _j++){
+		show_debug_message(_i + cow);
 		instance_create_layer(_xgui + (_obj_size_x + 20) * _i, 380, layer, obj_select_level, {
-			level: (_i + 3),
+			level: (_i + cow),
 		});
 	}
 }

@@ -1,4 +1,7 @@
 event_inherited();
+//inventario
+inventario = ds_grid_create(5,2)
+
 //Aura
 instance_create_layer(x,y,layer,obj_player_aura)
 
@@ -13,7 +16,7 @@ move_direction = 270;
 state = "idle";
 
 //sprites
-ft = 3;
+ft = 0;
 spr_walking = [spr_walking_left, spr_walking_right, spr_walking_up, spr_walking_down];
 spr_idle = [spr_idle_left, spr_idle_right, spr_idle_up, spr_idle_down];
 sprite_index = spr_idle[ft];

@@ -1,3 +1,5 @@
+show_debug_message("dialogo criado")
+
 i = 0;
 
 char_prox = 1;
@@ -11,7 +13,6 @@ char_atual = "";
 
 indice_spr = choose(1,3,5);
 indice_spr_max = sprite_get_number(sprite_header);
-
 
 
 reset = function(){
@@ -52,6 +53,7 @@ pause_draw = function(_char_atual, _char_pause){
 }
 
 set_config_text = function(){
+	draw_set_font(fnt_dialog)
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
 }

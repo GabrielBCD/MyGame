@@ -9,8 +9,8 @@
   "name":"obj_gui_back",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interface",
-    "path":"folders/Objetos/Interface.yy",
+    "name":"Controllers",
+    "path":"folders/Objetos/Controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +27,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"room_prox","filters":[],"listItems":[],"multiselect":false,"name":"room_prox","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
+    {"$GMObjectProperty":"","%Name":"room_prox","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"name":"room_prox","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

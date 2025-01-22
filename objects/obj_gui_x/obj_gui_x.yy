@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Levels.yy",
+    "path":"folders/Objetos/Menus/Levels.yy",
   },
   "parentObjectId":{
     "name":"obj_gui_back",
