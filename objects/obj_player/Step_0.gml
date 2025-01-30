@@ -7,6 +7,7 @@ var _talk = instance_exists(obj_dialogo_npc) or instance_exists(obj_dialogo_inte
 var _move = hspd != 0 or vspd != 0;
 
 if (_talk) state = "talking";
+if (instance_exists(obj_cutscene)) state = "cutscene"
 if (room != rm_level_map) state = "menu"
 
 var _mv = 0;
@@ -32,10 +33,11 @@ switch (state){
 		if (move_direction == 180)	{_mv = 0; ft = 0}	
 		if (move_direction == 225)	{_mv = 0; ft = 0}	
 		if (move_direction == 270)	{_mv = 3; ft = 3}	
-		if (move_direction == 315)	{_mv = 1; ft = 1}	
+		if (move_direction == 315)	{_mv = 1; ft = 1}
 		sprite_index = spr_walking[_mv]
 		break;
 	case "talking":
+		if (instance_exists(obj_cutscene)) state = "cutscene"
 		if (!instance_exists(obj_dialogo_npc)) state = "idle"
 		no_move();
 		sprite_index = spr_idle[ft];
@@ -44,7 +46,10 @@ switch (state){
 		no_move()
 		if (room == rm_level_map) state = "idle"
 		break
-	
+	case "cutscene":
+		no_move()
+		if (!instance_exists(obj_cutscene)) state = "idle"
+		break;
 }
 
 if (vel == max_vel){

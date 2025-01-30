@@ -13,3 +13,5 @@ global.desc_levels = [desc_1, desc_2, desc_3, desc_4, desc_5, desc_6]
 
 mouse_cursor = [spr_mouse_default, spr_mouse_move];
 window_set_cursor(cr_none)
+
+cutscene = true;

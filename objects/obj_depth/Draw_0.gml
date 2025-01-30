@@ -18,3 +18,4 @@ for (var _j = 0; _j < ds_grid_height(_grid); _j++){
 		draw_self();
 	}
 }
+

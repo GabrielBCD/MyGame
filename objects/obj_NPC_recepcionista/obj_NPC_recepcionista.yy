@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_NPC_recepcionista",
+  "%Name":"obj_npc_recepcionista",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_NPC_recepcionista",
+  "name":"obj_npc_recepcionista",
   "overriddenProperties":[],
   "parent":{
     "name":"NPC",
     "path":"folders/Objetos/NPC.yy",
   },
   "parentObjectId":{
-    "name":"obj_visible",
-    "path":"objects/obj_visible/obj_visible.yy",
+    "name":"obj_interagir",
+    "path":"objects/obj_interagir/obj_interagir.yy",
   },
   "persistent":true,
   "physicsAngularDamping":0.1,

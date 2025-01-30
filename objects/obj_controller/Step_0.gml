@@ -14,3 +14,13 @@ var _esq = keyboard_check(vk_escape)
 if (room == rm_level_interact && _esq){
 	transition(rm_level_map)
 }
+
+
+//Inicio da Cutscene
+
+show_debug_message(room)
+show_debug_message(rm_level_map)
+if (cutscene && room == rm_level_map){
+	instance_create_layer(x,y,"Instances", obj_cutscene)
+	cutscene = false;
+}

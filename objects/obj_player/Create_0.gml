@@ -5,7 +5,7 @@ inventario = ds_grid_create(5,2)
 //Aura
 instance_create_layer(x,y,layer,obj_player_aura)
 
-//Moovimentação
+//Movimentação
 vel = 0;
 max_vel = 3.5;
 
