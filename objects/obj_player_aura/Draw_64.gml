@@ -1,1 +1,0 @@
-draw_text(10,10,$"Estado: {obj_player.state}")

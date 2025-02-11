@@ -7,15 +7,15 @@
   "managed":true,
   "name":"obj_gui_play",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_gui_back","path":"objects/obj_gui_back/obj_gui_back.yy",},"propertyId":{"name":"room_prox","path":"objects/obj_gui_back/obj_gui_back.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"obj_button_interact","path":"objects/obj_button_interact/obj_button_interact.yy",},"propertyId":{"name":"room_prox","path":"objects/obj_button_interact/obj_button_interact.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Menus/Levels.yy",
+    "path":"folders/Objetos/Controllers/Menus/Levels.yy",
   },
   "parentObjectId":{
-    "name":"obj_gui_back",
-    "path":"objects/obj_gui_back/obj_gui_back.yy",
+    "name":"obj_button_interact",
+    "path":"objects/obj_button_interact/obj_button_interact.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

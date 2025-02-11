@@ -19,17 +19,16 @@ msg_state_0 = ["Hoje é o seu primeiro dia como estagiário não faça besteira.
 msg_state_2 = [
 	"Olá!",
 	"Você é o escr digo ESTÁGIADO novo, não é?",
-	"Venha, vou leva-lo até a casa do krl seu merda"]
+	"Venha, vou leva-lo até a o Samuel"]
 	
 msg_state_4_part_01 = [
-	"Coé meu man, esse aq é o escravo novo",
-	"Ensina as parada aí pra ele blz?",
-	"Flw seu viado."]
+	"Oi, Tudo Bem? Então esse aqui é o estagiário novo...",
+	"Ensina as parada aí pra ele blz?"]
 	
 msg_state_4_part_02 = [
 	"Eai meu man, suave?",
 	"É o seguinte patrão, tu vai acessar o PC lá na salinha ali do lado e escolher um trabalho",
-	"Aí dps tu que se foda pra resolver ok"
+	"Aí dps tu que se vira"
 ]
 
 criar_dialogo_interacao(msg_state_0)

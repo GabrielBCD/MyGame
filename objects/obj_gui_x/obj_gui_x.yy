@@ -9,11 +9,11 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Menus/Levels.yy",
+    "path":"folders/Objetos/Controllers/Menus/Levels.yy",
   },
   "parentObjectId":{
-    "name":"obj_gui_back",
-    "path":"objects/obj_gui_back/obj_gui_back.yy",
+    "name":"obj_button_interact",
+    "path":"objects/obj_button_interact/obj_button_interact.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

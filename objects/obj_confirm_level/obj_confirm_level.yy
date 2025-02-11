@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Menus/Levels.yy",
+    "path":"folders/Objetos/Controllers/Menus/Levels.yy",
   },
   "parentObjectId":null,
   "persistent":false,

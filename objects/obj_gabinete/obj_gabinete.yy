@@ -1,18 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_gui_back",
+  "%Name":"obj_gabinete",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_gui_back",
+  "name":"obj_gabinete",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controllers",
-    "path":"folders/Objetos/Controllers.yy",
+    "name":"Controller",
+    "path":"folders/Objetos/Objetos de Fase/Controller.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_button_interact",
+    "path":"objects/obj_button_interact/obj_button_interact.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -26,11 +29,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"","%Name":"room_prox","filters":[
-        "GMRoom",
-      ],"listItems":[],"multiselect":false,"name":"room_prox","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

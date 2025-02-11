@@ -1,5 +1,6 @@
 event_inherited();
 
 action = function(){
-	transition(global.level_rooms[level])
+	transition(rm_level_map)
+	global.level_selected = level;
 }
