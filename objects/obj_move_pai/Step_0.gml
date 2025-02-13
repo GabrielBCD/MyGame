@@ -13,7 +13,7 @@ switch (state) {
 		depth = -1;
 		break;
 	case 2: //Logo após ser solto pelo mouse
-		if (instance_place(x,y,colisor)){
+		if (place_meeting(x,y,colisor)){
 			x = colisor.x;
 			y = colisor.y;
 			state = 3;

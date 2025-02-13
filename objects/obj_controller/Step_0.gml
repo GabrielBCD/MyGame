@@ -12,11 +12,17 @@ if (_move){
 } else if _botoes {
 	cursor_sprite = mouse_cursor[0];
 } else {
-	cursor_sprite = mouse_cursor[0]
+	cursor_sprite = mouse_cursor[0];
 }
 
 var _esq = keyboard_check(vk_escape)
 
 if (room == rm_level_interact && _esq){
 	transition(rm_level_map)
+}
+
+if (room != rm_level_map){
+	obj_player.image_alpha = 0;
+} else {
+	obj_player.image_alpha = 1;
 }
