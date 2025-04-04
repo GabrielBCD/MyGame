@@ -1,12 +1,11 @@
-menu_text[0,0] = "JOGAR";
-menu_text[0,1] = "OPÇÕES";
-menu_text[0,2] = "CRÉDITOS";
-menu_text[0,3] = "SAIR";
+//menu_text[0,0] = "JOGAR";
+//menu_text[0,1] = "OPÇÕES";
+//menu_text[0,2] = "CRÉDITOS";
+//menu_text[0,3] = "SAIR";
 
-menu_text[1,0] = "SOM";
-menu_text[1,1] = "GRAFICOS";
-menu_text[1,2] = "VOLTAR";
+//menu = "Principal";
 
-menu_bug = ["D$*&T","YuM*<E", "LwGQ%","AKlWi"]
+menu_icons[0,0] = spr_pasta;
+menu_icons[0,1] = spr_bloco_notas;
+menu_icons[0,2] = spr_off;
 
-menu = "Principal";

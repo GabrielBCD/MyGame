@@ -2,7 +2,7 @@
 instance_create_layer(x,y,layer, obj_depth)
 
 //Informações globais e Arquivos
-global.level = 0;
+global.level = -1;
 global.cutscene = false; //true para começar a cutscene pela primeira vez
 global.level_selected = 0;
 

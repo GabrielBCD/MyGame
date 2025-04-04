@@ -13,7 +13,6 @@ switch (menu){
 						transition(rm_level_select)
 						break;
 					case _matriz[_linha,1]: //Opções
-						menu = "Sub-Menu"
 						break;
 					case _matriz[_linha,2]: //Créditos
 						break;
@@ -24,26 +23,26 @@ switch (menu){
 			}
 		}
 	break;
-	case "Sub-Menu":
-		if (_linha == 1){
-			if (mouse_check_button_pressed(mb_left)){
-				switch _matriz[_linha, _i]{
-					case _matriz[_linha,0]: //Som
-						if (!instance_exists(obj_submenu)){
-							instance_create_layer(display_get_width() / 4, display_get_height() / 4, layer, obj_submenu)		
-						}
-						break;
-					case _matriz[_linha,1]: //Gráficos
-						if (!instance_exists(obj_submenu)){
-							instance_create_layer(display_get_width() / 4, display_get_height() / 4, layer, obj_submenu)		
-						}
-						break;
-					case _matriz[_linha,2]: //Voltar
-						menu = "Principal"
-						break;
-				}
-			}
-		}		
-	break;
+	//case "Sub-Menu":
+	//	if (_linha == 1){
+	//		if (mouse_check_button_pressed(mb_left)){
+	//			switch _matriz[_linha, _i]{
+	//				case _matriz[_linha,0]: //Som
+	//					if (!instance_exists(obj_submenu)){
+	//						instance_create_layer(display_get_width() / 4, display_get_height() / 4, layer, obj_submenu)		
+	//					}
+	//					break;
+	//				case _matriz[_linha,1]: //Gráficos
+	//					if (!instance_exists(obj_submenu)){
+	//						instance_create_layer(display_get_width() / 4, display_get_height() / 4, layer, obj_submenu)		
+	//					}
+	//					break;
+	//				case _matriz[_linha,2]: //Voltar
+	//					menu = "Principal"
+	//					break;
+	//			}
+	//		}
+	//	}		
+	//break;
 }
 }
