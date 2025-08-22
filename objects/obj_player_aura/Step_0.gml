@@ -4,5 +4,5 @@ var _obj = instance_place(x, y, obj_interagir);
 //Caso colidir com o objeto que pode interagir e clicar
 if (_control and _obj){
 	_obj.action();
-	_obj.qtd_interacoes++;
+	//_obj.qtd_interacoes++;
 }

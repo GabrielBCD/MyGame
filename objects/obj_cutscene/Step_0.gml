@@ -73,6 +73,7 @@ switch(state){
 			_obj.y = 798
 			_obj.sprite_index = spr_npc_recepcao_sent;
 			state = "acabou dsgç"
+			obj_player.visible = true
 			instance_destroy()	
 		}
 		break;

@@ -6,8 +6,8 @@
   "name":"obj_encaixe",
   "overriddenProperties":[],
   "parent":{
-    "name":"Parent",
-    "path":"folders/Objetos/Objetos de Fase/Parent.yy",
+    "name":"moves",
+    "path":"folders/Objetos/Objetos de Fase/moves.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -15,13 +15,13 @@ if (_instance){
 
 switch(state){
 	case 0: //no click
-		image_index = 0;
+		//image_index = 0;
 		break;
 	case 1: //clicking
-		image_index = 1;
+		//image_index = 1;
 		break;
 	case 2: //stop clicking
-		image_index = 0;
+		//image_index = 0;
 		action();
 		break;
 }

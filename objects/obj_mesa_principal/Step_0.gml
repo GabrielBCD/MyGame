@@ -1,4 +1,4 @@
-if global.level == -1 {
+if global.level_selected == -1 {
 	action = function(){
 		criar_dialogo_interacao(["Não há nada aqui agora..."])
 	}	

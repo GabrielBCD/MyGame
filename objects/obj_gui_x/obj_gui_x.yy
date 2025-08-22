@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Controllers/Menus/Levels.yy",
+    "path":"folders/Objetos/Menus/Janelas menu/Janela do play/Levels.yy",
   },
   "parentObjectId":{
     "name":"obj_button_interact",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gui_x",
-    "path":"sprites/spr_gui_x/spr_gui_x.yy",
+    "name":"spr_select_close",
+    "path":"sprites/spr_select_close/spr_select_close.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,0 +1,7 @@
+//instance_destroy(mymove)
+instance_destroy(myclose)
+instance_destroy(mylevels)
+instance_destroy(myminimize)
+instance_destroy(obj_taskbar_play)
+instance_destroy(obj_window_levels)
+ds_list_delete(obj_menu.taskbar_list, ds_list_find_index(obj_menu.taskbar_list ,obj_taskbar_play))

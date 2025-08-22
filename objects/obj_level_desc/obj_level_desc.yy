@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Controllers/Menus/Levels.yy",
+    "path":"folders/Objetos/Menus/Janelas menu/Janela do play/Levels.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_confirm",
-    "path":"sprites/spr_confirm/spr_confirm.yy",
+    "name":"spr_select",
+    "path":"sprites/spr_select/spr_select.yy",
   },
   "spriteMaskId":null,
   "visible":true,

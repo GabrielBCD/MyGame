@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"icones",
-    "path":"folders/Sprites/interface/Novo Menu/icones.yy",
+    "path":"folders/Sprites/interface/Menu/icones.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Controllers/Menus/Levels.yy",
+    "path":"folders/Objetos/Menus/Janelas menu/Janela do play/Levels.yy",
   },
   "parentObjectId":null,
   "persistent":false,

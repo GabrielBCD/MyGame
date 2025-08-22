@@ -1,0 +1,1 @@
+sprite_index = spr_lateral_frontal_add

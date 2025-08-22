@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"level icons",
-    "path":"folders/Sprites/interface/level icons.yy",
+    "path":"folders/Sprites/interface/Menu/Janelas/Janela do Play/level icons.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

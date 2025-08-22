@@ -11,7 +11,7 @@
   ],
   "parent":{
     "name":"Levels",
-    "path":"folders/Objetos/Controllers/Menus/Levels.yy",
+    "path":"folders/Objetos/Menus/Janelas menu/Janela do play/Levels.yy",
   },
   "parentObjectId":{
     "name":"obj_button_interact",
@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_gui_confirm_level",
-    "path":"sprites/spr_gui_confirm_level/spr_gui_confirm_level.yy",
+    "name":"spr_select_accept",
+    "path":"sprites/spr_select_accept/spr_select_accept.yy",
   },
   "spriteMaskId":null,
   "visible":true,

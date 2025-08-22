@@ -10,8 +10,8 @@
   "name":"obj_transition",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menus",
-    "path":"folders/Objetos/Controllers/Menus.yy",
+    "name":"Controllers",
+    "path":"folders/Objetos/Controllers.yy",
   },
   "parentObjectId":null,
   "persistent":true,

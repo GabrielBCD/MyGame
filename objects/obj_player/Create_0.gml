@@ -1,7 +1,4 @@
 event_inherited();
-//inventario
-inventario = ds_grid_create(5,2)
-
 //Aura
 instance_create_layer(x,y,layer,obj_player_aura)
 
@@ -32,7 +29,7 @@ function move(_rig,_lef, _up, _down){
 		vel = lerp(vel, max_vel, 1);
 	} else {
 		vel = lerp(vel, 0, .8);
-	}	
+	}
 }
 
 function no_move(){

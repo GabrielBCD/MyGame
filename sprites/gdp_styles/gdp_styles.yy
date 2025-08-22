@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Conjunto",
-    "path":"folders/Sprites/interface/Conjunto.yy",
+    "path":"folders/Sprites/UI/Conjunto.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

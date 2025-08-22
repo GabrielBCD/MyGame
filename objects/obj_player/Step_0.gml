@@ -2,6 +2,11 @@ var _rig =	keyboard_check(ord("D"));
 var _lef =	keyboard_check(ord("A"));
 var _up =	keyboard_check(ord("W"));
 var _down = keyboard_check(ord("S"));
+var _menu = keyboard_check(ord("M"));
+
+if _menu {
+	room_goto(rm_inicial)	
+}
 
 var _talk = instance_exists(obj_dialogo_npc) or instance_exists(obj_dialogo_interacao);
 var _move = hspd != 0 or vspd != 0;
