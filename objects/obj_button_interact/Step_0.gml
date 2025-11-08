@@ -22,6 +22,8 @@ switch(state){
 		break;
 	case 2: //stop clicking
 		//image_index = 0;
-		action();
+		if (!instance_exists(obj_dialogo_npc)){
+			action();
+		}
 		break;
 }

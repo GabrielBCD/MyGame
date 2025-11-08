@@ -20,7 +20,7 @@ switch(state){
 		}
 		break;
 	case 2:
-		if (_obj.x == 1199){
+		if (_obj.x == 1190){
 			_obj.image_index = 2;
 			_obj.image_speed = 0;
 			alarm_set(0,1)
@@ -35,7 +35,8 @@ switch(state){
 		if (!instance_exists(obj_dialogo_npc)){
 			if (layer_sequence_is_paused(animation_03)){
 				layer_sequence_headpos(animation_03, 1)
-				_player.image_alpha = 0
+				//_player.image_alpha = 0
+				_player.sprite_index = noone
 				_obj.image_alpha = 0
 			}
 			
@@ -49,7 +50,7 @@ switch(state){
 				_player.sprite_index = spr_idle_up
 				_player.x = 1063
 				_player.y = 528
-				_player.image_alpha = 1
+				//_player.image_alpha = 1
 				
 				_obj.sprite_index = spr_npc_recepcao_idle_3
 				_obj.x = 1029
@@ -73,7 +74,7 @@ switch(state){
 			_obj.y = 798
 			_obj.sprite_index = spr_npc_recepcao_sent;
 			state = "acabou dsgç"
-			obj_player.visible = true
+			global.cutscene = false
 			instance_destroy()	
 		}
 		break;

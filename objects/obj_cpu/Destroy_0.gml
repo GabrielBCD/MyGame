@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-global.cpu = true
+global.cpu.connected = true

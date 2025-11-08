@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-global.hd = true
+global.hd.connected = true

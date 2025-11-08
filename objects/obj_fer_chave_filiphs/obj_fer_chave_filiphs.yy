@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chave_filiphs",
-    "path":"sprites/spr_chave_filiphs/spr_chave_filiphs.yy",
+    "name":"spr_item_2",
+    "path":"sprites/spr_item_2/spr_item_2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

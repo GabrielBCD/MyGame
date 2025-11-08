@@ -123,31 +123,81 @@ switch (global.state_pc){
 
 #endregion
 
-#region //Condições de Funcionamento das peças
 
-//condição de ligar temporária
-global.tornon = (global.board == true and global.cpu == true and global.cooler == true and global.ram == true and global.gpu == true and global.power == true and global.hd == true);
+#region Etapas dos dialogos do tutorial e Dicas
 
-//bloquear controle de peças enquanto ligado
-
-//Bloquear controles em outros estados
-if (global.state_pc == "PC" or global.state_pc == "MONITOR" or global.state_pc == "MONITOR_T") {
-	if (instance_exists(obj_placa_mae)) { obj_placa_mae.visible = false; }
-	if (instance_exists(obj_cpu)) { obj_cpu.visible = false; }
-	if (instance_exists(obj_cooler)) { obj_cooler.visible = false; }
-	if (instance_exists(obj_gpu)) { obj_gpu.visible = false; }
-	if (instance_exists(obj_ram)) { obj_ram.visible = false; }
-	if (instance_exists(obj_hd)) { obj_hd.visible = false; }
-	if (instance_exists(obj_power)) { obj_power.visible = false; }
-	
-} else {
-	if (instance_exists(obj_placa_mae)) { obj_placa_mae.visible = true; }
-	if (instance_exists(obj_cpu)) { obj_cpu.visible = true; }
-	if (instance_exists(obj_cooler)) { obj_cooler.visible = true; }
-	if (instance_exists(obj_gpu)) { obj_gpu.visible = true; }
-	if (instance_exists(obj_ram)) { obj_ram.visible = true; }
-	if (instance_exists(obj_hd)) { obj_hd.visible = true; }
-	if (instance_exists(obj_power)) { obj_power.visible = true; }
+if (primeira_dica = true) {
+	primeira_dica = false
+	global.dica_atual = [
+		"Clique no Gabinete"
+	]
 }
+
+var _tutorial_gabinete_msg = [
+	"Ótimo. Agora estamos vendo o interior do gabinete.",
+	"Para encontrar o botão de ligar, precisaremos de um ângulo melhor.",
+	"Use as setas de navegação para girar a câmera ao redor do gabinete.",
+	"Continue girando até encontrar a parte frontal e clique no botão. Nosso objetivo é tentar ligá-lo.",
+	"Qualquer dúvida que tiver estarei sempre disponível"
+]
+
+if (tutorial_gabinete and global.state_pc == "GABINETE_LF") {
+	criar_dialogo_npc(_tutorial_gabinete_msg, spr_npc_2_head, "Samuel")
+	tutorial_gabinete = false
+	global.dica_atual = [
+		"Use as setas de navegação para girar a câmera. O botão de ligar deve estar na parte da frente.",
+	]
+}
+
+
+var _tutorial_setas_msg = [
+	"Você apertou o botão e... nada. Exatamente como o esperado.",
+	"Este é um sintoma clássico de que a energia não está chegando aos componentes.",
 	
+	"Ok, vamos começar o diagnóstico de verdade.",
+	"Gire a câmera de volta para a lateral aberta do gabinete, onde vemos as peças.",
+
+	"Quando um computador não dá nenhum sinal de vida, o suspeito número um é sempre o mesmo.",
+	"Estamos falando da Fonte de Alimentação, responsável por distribuir a energia.",
+]
+
+if (tutorial_setas and obj_gabinete_button.click_tutorial = true) {
+	criar_dialogo_npc(_tutorial_setas_msg, spr_npc_2_head, "Samuel")
+	tutorial_setas = false
+	global.dica_atual = [
+		"O computador não deu sinal. Gire a câmera para o lado e vamos checar o suspeito principal: a Fonte de Alimentação.",
+	]
+}
+
+
+var _tutorial_pecas_msg = [
+	"Agora, vamos focar na lista de peças à sua esquerda.",
+	"Este é o seu Menu de Controle. É por ele que você gerencia os componentes.",
+
+	"Para desmontar uma peça usando o menu, o processo é bem simples.",
+	"Clique no nome de um componente que esteja Montado para removê-lo do gabinete.",
+	
+]
+
+if (tutorial_pecas and !tutorial_setas and global.state_pc == "GABINETE_LF") {
+	criar_dialogo_npc(_tutorial_pecas_msg, spr_npc_2_head, "Samuel")
+	tutorial_pecas = false
+	global.dica_atual = [
+		"Vamos fazer uma vistoria na fonte.",
+	]
+}
+
+var _tutorial_inspecao = [
+	"Agora que a peça está fora, podemos fazer uma vistoria detalhada.",
+	"Clique nela novamente na lista para abrir a janela de manutenção.",
+]
+
+if (tutorial_inspecao == true and global.power.connected == false){
+	criar_dialogo_npc(_tutorial_inspecao, spr_npc_2_head, "Samuel")
+	tutorial_inspecao = false
+	global.dica_atual = [
+		"Selecione a peça correta para essa ação."
+	]
+}
+
 #endregion

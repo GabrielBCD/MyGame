@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-global.ram = true
+global.ram.connected = true

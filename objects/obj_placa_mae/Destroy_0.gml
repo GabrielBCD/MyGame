@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-global.board = true;
+global.board.connected = true;

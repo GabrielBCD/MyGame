@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (global.hd == false){
+if (global.hd.connected == false){
 	condicaoextra = true;
 } else {
 	condicaoextra = false	

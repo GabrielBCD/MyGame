@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-global.gpu = true
+global.gpu.connected = true

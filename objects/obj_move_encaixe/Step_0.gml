@@ -1,3 +1,6 @@
+var _desabilitadores = instance_exists(obj_dialogo_npc) or instance_exists(obj_mochila)
+
+if (!_desabilitadores){
 switch (state) {
 	case 0: //não selecionado
 		x = lerp(x, spawn_x, lerp_)	
@@ -34,4 +37,5 @@ switch (state) {
 		depth = 0;
 		instance_destroy();
 		break;
+}
 }

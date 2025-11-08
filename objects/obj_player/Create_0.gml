@@ -1,4 +1,5 @@
 event_inherited();
+
 //Aura
 instance_create_layer(x,y,layer,obj_player_aura)
 

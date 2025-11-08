@@ -1,6 +1,8 @@
 draw_text(10,10,$"Estado: {obj_player.state}")
 if (instance_exists(obj_pc_controller_01)){
-	draw_text(10,30,$"Estado: {global.state_pc}")
+	//draw_text(10,30,$"Estado: {global.state_pc}")
+	draw_text(10,30,$"Interact: {global.interact}")
+	
 	
 	if (global.selected == noone) {
 		// Não desenha nada se nenhum objeto estiver selecionado

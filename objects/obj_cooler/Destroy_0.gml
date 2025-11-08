@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-global.cooler = true
+global.cooler.connected = true

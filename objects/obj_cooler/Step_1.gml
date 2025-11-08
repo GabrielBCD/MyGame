@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (global.cpu == true){
+if (global.cpu.connected == true){
 	condicaoextra = true;
 } else {
 	condicaoextra = false	

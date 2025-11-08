@@ -13,8 +13,8 @@
   "name":"obj_pc_controller_01",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controller",
-    "path":"folders/Objetos/Objetos de Fase/Controller.yy",
+    "name":"Fase01",
+    "path":"folders/Objetos/Fase01.yy",
   },
   "parentObjectId":null,
   "persistent":false,

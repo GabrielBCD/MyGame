@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (global.board == false){
+if (global.board.connected == false){
 	condicaoextra = true;
 } else {
 	condicaoextra = false	

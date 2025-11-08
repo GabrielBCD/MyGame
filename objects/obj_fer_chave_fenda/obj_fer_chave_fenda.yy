@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_chave_fenda",
-    "path":"sprites/spr_chave_fenda/spr_chave_fenda.yy",
+    "name":"spr_item_1",
+    "path":"sprites/spr_item_1/spr_item_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

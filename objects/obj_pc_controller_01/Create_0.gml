@@ -1,17 +1,108 @@
 level = global.level;
 global.state_pc = "PC";
 
-global.hd = true
-global.power = true
-global.board = true
-global.cooler = true
-global.cpu = true
-global.gpu = true
-global.ram = true
+global.dica_atual = ""
 
-global.selected = noone
+#region Componentes e Estado de Inicialização
+
+global.hd = {
+	tipo: "HD",
+	modelo: "HD 240 GB",
+	state: true,
+	connected: true,
+	descricao_tecnica: "O Disco Rígido (HD ou SSD) é o 'armário' do computador. É o armazenamento permanente, onde o sistema operacional, os programas e seus arquivos ficam guardados mesmo quando o PC está desligado. A velocidade dele define o quão rápido o computador liga e carrega os aplicativos."
+};
+global.power = {
+	tipo: "Fonte de Energia",
+	modelo: "500W 80+ Bronze",
+	state: false,
+	connected: true,
+	descricao_tecnica: "A Fonte de Alimentação (PSU) é o 'coração' do sistema. Ela converte a energia elétrica da tomada para as voltagens corretas que cada componente precisa para funcionar. Uma fonte de boa qualidade é essencial para a estabilidade e segurança de todo o computador."
+};
+global.board = {
+	tipo: "Placa-Mãe",
+	modelo: "MASUS H410 Chipset Mintel LGA1200",
+	state: true,
+	connected: true,
+	descricao_tecnica: "A Placa-Mãe é o 'sistema nervoso central' do PC. É a placa principal que conecta todos os componentes — CPU, RAM, GPU, armazenamento — permitindo que eles se comuniquem entre si e trabalhem em conjunto. Ela é a base sobre a qual todo o sistema é construído."
+};
+global.cooler = {
+	tipo: "Cooler Box",
+	modelo: "Cooler Box",
+	state: true,
+	connected: true,
+	descricao_tecnica: "O Cooler é o sistema de ventilação que impede o superaquecimento do processador. Ele usa um dissipador de metal e uma ventoinha para remover o calor gerado pela CPU, garantindo que ela opere com máximo desempenho e segurança."
+};
+global.cpu = {
+	tipo: "Processador (CPU)",
+	modelo: "Nintel Kore i5-10400",
+	state: true,
+	connected: true,
+	desc: "A CPU (Unidade Central de Processamento), ou processador, é o 'cérebro' do computador. Sua função é interpretar e executar a maioria dos comandos, realizando os cálculos que fazem o sistema operacional e os programas funcionarem. Sua velocidade afeta diretamente a agilidade geral do PC."
+};
+global.gpu = {
+	tipo: "Placa de Vídeo (GPU)",
+	modelo: "MVIDIA ZTX 1650",
+	state: true,
+	connected: true,
+	descricao_tecnica: "A GPU (Unidade de Processamento Gráfico), ou Placa de Vídeo, é a responsável por criar tudo o que você vê na tela. Ela processa dados gráficos para gerar imagens, vídeos e as cenas 3D dos jogos, aliviando a carga de trabalho da CPU para essas tarefas visuais."
+};
+global.ram = {
+	tipo: "Memória RAM",
+	modelo: "8 GB DDR4",
+	state: false,
+	connected: true,
+	descricao_tecnica: "A Memória RAM é a 'mesa de trabalho' do computador. É uma memória ultrarrápida que guarda temporariamente os dados dos programas em uso. Mais RAM permite executar mais tarefas ao mesmo tempo sem lentidão, mas seu conteúdo é apagado quando o PC desliga."
+};
+
+global.parts = [global.hd, global.power, global.board,global.cpu, global.cooler, global.gpu, global.ram]
+
+function verificar_sistema() {
+
+    for (var _i = 0; _i < array_length(global.parts); _i++) {
+        
+        var _peca_atual = global.parts[_i];
+        if (_peca_atual.connected == false || _peca_atual.state == false) {
+            
+            //show_debug_message("Verificação falhou! Problema na peça: " + string(_peca_atual.tipo));
+            return false;
+        }
+    }
+
+    show_debug_message("Verificação completa! O sistema pode ligar.");
+    return true;
+}
+
+function encontrar_pecas_defeituosas() {
+    var _lista_defeituosas = []
+
+    for (var _i = 0; _i < array_length(global.parts); _i++) {
+        
+        var _peca_atual = global.parts[_i];
+
+        if (!is_struct(_peca_atual)) {
+            continue;
+        }
+
+        if (_peca_atual.state == false) {
+            
+            array_push(_lista_defeituosas, _peca_atual.tipo);
+        }
+    }
+
+    return _lista_defeituosas;
+}
+
 global.tornon = false;
+global.selected = noone
 global.powered = false;
+
+
+global.interact = noone //interação das peças
+
+#endregion
+
+#region Instancias do Computador e controles
 
 monitor = instance_create_layer(room_width/2 - 30 , room_height/2, "Instances", obj_monitor);
 gabinete = instance_create_layer(room_width/2 + 50, room_height/2, "Instances", obj_gabinete);
@@ -37,59 +128,31 @@ click_04.action = function () {
 	global.state_pc = "PC";
 }
 
-// --- Variáveis para a FASE 01 com Descrições Técnicas ---
 
-// ## Processador (CPU) ##
-global.cpu_desc = {
-    modelo: "Intel Core i5-12400F",
-    nucleos: 6,
-    threads: 12,
-    frequencia_ghz: 2.5,
-    descricao_tecnica: "O processador (CPU) é o cérebro do computador, executando cálculos e instruções. Este modelo possui 6 núcleos e 12 threads, o que o torna excelente para multitarefa e jogos. A frequência de 2.5 GHz indica a velocidade base de suas operações, podendo atingir valores mais altos (boost) quando necessário."
-};
+#endregion
 
-global.cooler_desc = {
-    modelo: "Cooler Master Hyper 212",
-    tipo: "Air Cooler",
-    tdp_suportado_watts: 180,
-    descricao_tecnica: "O Cooler é responsável por dissipar o calor gerado pelo processador. Este modelo a ar (Air Cooler) usa um dissipador de alumínio e uma ventoinha para manter a CPU em temperaturas seguras, prevenindo a perda de desempenho por superaquecimento (thermal throttling) e garantindo a longevidade do componente."
-};
+#region Diálogo inicial do tutorial e variaveis
 
-// ## Memória RAM ##
-global.ram_desc = {
-	quantidade: 2,
-    capacidade_gb: 16,
-    tipo: "DDR4",
-    velocidade_mhz: 3200,
-    descricao_tecnica: "A RAM é a memória de acesso rápido do sistema, funcionando como uma 'mesa de trabalho' para o processador. Com 16 GB, há espaço suficiente para jogos modernos e vários programas abertos. A velocidade de 3200 MHz (tipo DDR4) garante que os dados sejam transferidos rapidamente para a CPU, evitando gargalos."
-};
+primeira_dica = true
+tutorial_gabinete = true;
+tutorial_setas = true;
+tutorial_pecas = true;
+tutorial_inspecao = true;
 
-// ## Placa de Vídeo (GPU) ##
-global.gpu_desc = {
-    modelo: "NVIDIA GeForce RTX 3060",
-    vram_gb: 12,
-    descricao_tecnica: "A placa de vídeo (GPU) é responsável por renderizar tudo que você vê na tela. Este modelo RTX 3060 é poderoso para jogos em Full HD e Quad HD, e seus 12 GB de VRAM são essenciais para carregar texturas de alta qualidade. Também possui suporte a tecnologias como Ray Tracing para iluminação realista."
-};
+mensagem = [
+	// Parte 1: Introdução ao problema
+	"Recebemos este computador com um problema sério.",
+	"O cliente disse que ele parou de funcionar após uma queda de energia.",
+	"Parece que a máquina foi afetada por alguma oscilação elétrica.",
+	"Nosso trabalho é descobrir o que está errado e consertar.",
 
-// ## Armazenamento (SSD/HDD) ##
-global.hd_desc = {
-    modelo: "Seagate Barracuda",
-    tipo: "HDD (Hard Disk Drive)",
-    capacidade_tb: 2,
-    velocidade_rpm: 7200,
-    descricao_tecnica: "O HD é uma unidade de armazenamento mecânica, ideal para guardar grandes volumes de dados, como jogos, vídeos e backups. Embora mais lento que um SSD, seu custo por gigabyte é menor. A velocidade de 7200 RPM (rotações por minuto) é o padrão para HDDs de desktop, influenciando o tempo de acesso aos arquivos."
-};
+	// Parte 2: Ensinando a interagir com o Computador e o Gabinete
+	"Para começar, vamos examinar o Computador.",
+	"Oberserve o Gabinete, a caixa metálica que protege os componentes internos.",
+	"Clique nele para abrirmos e dar uma olhada por dentro.",
+]
+criar_dialogo_npc(mensagem, spr_npc_2_head, "Samuel")
 
-// ## Placa-Mãe ##
-global.board_desc = {
-    modelo: "ASUS TUF Gaming B660M-PLUS",
-    chipset: "Intel B660",
-    descricao_tecnica: "A placa-mãe é a espinha dorsal do PC, conectando todos os componentes para que possam se comunicar. O chipset B660 define a compatibilidade com o processador, a velocidade máxima da memória RAM e os tipos de conexões disponíveis. Ela é a fundação sobre a qual todo o sistema é construído."
-};
 
-//Fonte de Alimentação (PSU)
-global.fonte_desc = {
-    potencia_watts: 650,
-    certificacao: "80 Plus Bronze",
-    descricao_tecnica: "A fonte de alimentação (PSU) converte a energia da tomada para alimentar todos os componentes. Seus 650W de potência são suficientes para suprir a demanda da CPU e GPU. A certificação '80 Plus Bronze' garante uma boa eficiência energética, desperdiçando menos energia como calor."
-};
+
+#endregion

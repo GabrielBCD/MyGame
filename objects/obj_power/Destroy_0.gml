@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-global.power = true
+global.power.connected = true
