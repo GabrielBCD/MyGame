@@ -3,10 +3,16 @@ instance_create_layer(x,y,layer, obj_depth)
 
 //Informações globais e Arquivos
 global.level = -1;
-global.cutscene = false; //true para começar a cutscene pela primeira vez
+global.cutscene = true; //true para começar a cutscene pela primeira vez
 global.level_selected = -1;
 
-desc_1 = $"   //Sem Descrição\n    //no fichario...";
+global.queimou = false
+
+
+//fase 1
+global.power = false
+
+desc_1 = $"  Fase 01 - Queda de energia\n  Cliente alega que o computador\n  não liga mais após queda\n  de energia...";
 desc_2 = "    //Sem Descrição";
 desc_3 = "    //Sem Descrição";
 desc_4 = "    //Sem Descrição";

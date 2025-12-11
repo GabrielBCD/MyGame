@@ -1,58 +1,127 @@
 level = global.level;
+global.state = "game";
 global.state_pc = "PC";
 
 global.dica_atual = ""
+global.fonte_reserva = false;
+global.queimou = false
+global.qtd_queimadas = 0
 
 #region Componentes e Estado de Inicialização
 
 global.hd = {
-	tipo: "HD",
-	modelo: "HD 240 GB",
+	tipo: "Armazenamento (HD)",
+	modelo: "HD SATA 240 GB",
 	state: true,
 	connected: true,
-	descricao_tecnica: "O Disco Rígido (HD ou SSD) é o 'armário' do computador. É o armazenamento permanente, onde o sistema operacional, os programas e seus arquivos ficam guardados mesmo quando o PC está desligado. A velocidade dele define o quão rápido o computador liga e carrega os aplicativos."
+	descricao: "O Disco Rígido (HD ou SSD) é o 'armário' do computador. É o armazenamento permanente, onde o sistema operacional, os programas e seus arquivos ficam guardados mesmo quando o PC está desligado. A velocidade dele define o quão rápido o computador liga e carrega os aplicativos."
 };
 global.power = {
-	tipo: "Fonte de Energia",
-	modelo: "500W 80+ Bronze",
+	tipo: "Fonte de Alimentação (PSU)",
+	modelo: "400W, 110V",
+	voltagem: 110,
+	pinos: [
+		3.1,  // Pino 1 (Instável)
+	    3.2,  // Pino 2 (Instável)
+	    0.0,  // Pino 3 (GND)
+	    4.5,  // Pino 4 (Instável)
+	    0.0,  // Pino 5 (GND)
+	    4.4,  // Pino 6 (Instável)
+	    0.0,  // Pino 7 (GND)
+	    0.0,  // Pino 8 (PWR_OK FALHOU)
+	    5.0,  // Pino 9 (Standby OK)
+	    11.1, // Pino 10 (Muito baixo)
+	    11.2, // Pino 11 (Muito baixo)
+	    3.3,  // Pino 12
+    
+	    3.3,  // Pino 13
+	    -8.5, // Pino 14 (Trilho -12V com defeito)
+	    0.0,  // Pino 15 (GND)
+	    0.0,  // Pino 16 (PS-ON)
+	    0.0,  // Pino 17 (GND)
+	    0.0,  // Pino 18 (GND)
+	    0.0,  // Pino 19 (GND)
+	    0.0,  // Pino 20 (NC)
+	    4.5,  // Pino 21 (Instável)
+	    4.6,  // Pino 22 (Instável)
+	    4.4,  // Pino 23 (Instável)
+	    0.0   // Pino 24 (GND)
+	],
 	state: false,
 	connected: true,
-	descricao_tecnica: "A Fonte de Alimentação (PSU) é o 'coração' do sistema. Ela converte a energia elétrica da tomada para as voltagens corretas que cada componente precisa para funcionar. Uma fonte de boa qualidade é essencial para a estabilidade e segurança de todo o computador."
+	descricao: "A Fonte de Alimentação (PSU) é o 'coração' do sistema. Ela converte a energia elétrica da tomada para as voltagens corretas que cada componente precisa para funcionar. Uma fonte de boa qualidade é essencial para a estabilidade e segurança de todo o computador."
 };
+
+global.power2 = {
+	tipo: "Fonte de Alimentação (PSU)",
+	modelo: "500W 80+ Bronze, 110V",
+	voltagem: 110,
+	pinos: [
+	    3.3,  // Pino 1 (Laranja, +3.3V)
+	    3.3,  // Pino 2 (Laranja, +3.3V)
+	    0.0,  // Pino 3 (Preto, GND)
+	    5.0,  // Pino 4 (Vermelho, +5V)
+	    0.0,  // Pino 5 (Preto, GND)
+	    5.0,  // Pino 6 (Vermelho, +5V)
+	    0.0,  // Pino 7 (Preto, GND)
+	    5.0,  // Pino 8 (Cinza, PWR_OK)
+	    5.0,  // Pino 9 (Roxo, +5V VSB)
+	    12.0, // Pino 10 (Amarelo, +12V)
+	    12.0, // Pino 11 (Amarelo, +12V)
+	    3.3,  // Pino 12 (Laranja, +3.3V)
+    
+	    3.3,  // Pino 13 (Laranja, +3.3V)
+	    -12.0,// Pino 14 (Azul, -12V)
+	    0.0,  // Pino 15 (Preto, GND)
+	    0.0,  // Pino 16 (Verde, PS-ON)
+	    0.0,  // Pino 17 (Preto, GND)
+	    0.0,  // Pino 18 (Preto, GND)
+	    0.0,  // Pino 19 (Preto, GND)
+	    0.0,  // Pino 20 (Branco, NC/-5V)
+	    5.0,  // Pino 21 (Vermelho, +5V)
+	    5.0,  // Pino 22 (Vermelho, +5V)
+	    5.0,  // Pino 23 (Vermelho, +5V)
+	    0.0   // Pino 24 (Preto, GND)
+	],
+	state: false,
+	connected: true,
+	descricao: "A Fonte de Alimentação (PSU) é o 'coração' do sistema. Ela converte a energia elétrica da tomada para as voltagens corretas que cada componente precisa para funcionar. Uma fonte de boa qualidade é essencial para a estabilidade e segurança de todo o computador."
+};
+
 global.board = {
-	tipo: "Placa-Mãe",
-	modelo: "MASUS H410 Chipset Mintel LGA1200",
+	tipo: "Placa-Mãe (Motherboard)",
+	modelo: "MASUS H410M-E, Chipset Mintel H410, LGA1200, 2x DDR4",
 	state: true,
 	connected: true,
-	descricao_tecnica: "A Placa-Mãe é o 'sistema nervoso central' do PC. É a placa principal que conecta todos os componentes — CPU, RAM, GPU, armazenamento — permitindo que eles se comuniquem entre si e trabalhem em conjunto. Ela é a base sobre a qual todo o sistema é construído."
+	descricao: "A Placa-Mãe é o 'sistema nervoso central' do PC. É a placa principal que conecta todos os componentes — CPU, RAM, GPU, armazenamento — permitindo que eles se comuniquem entre si e trabalhem em conjunto. Ela é a base sobre a qual todo o sistema é construído."
 };
 global.cooler = {
-	tipo: "Cooler Box",
-	modelo: "Cooler Box",
+	tipo: "Cooler de CPU (Air Cooler)",
+	modelo: "Stock Cooler Mintel (In-Box)",
 	state: true,
 	connected: true,
-	descricao_tecnica: "O Cooler é o sistema de ventilação que impede o superaquecimento do processador. Ele usa um dissipador de metal e uma ventoinha para remover o calor gerado pela CPU, garantindo que ela opere com máximo desempenho e segurança."
+	descricao: "O Cooler é o sistema de ventilação que impede o superaquecimento do processador. Ele usa um dissipador de metal e uma ventoinha para remover o calor gerado pela CPU, garantindo que ela opere com máximo desempenho e segurança."
 };
 global.cpu = {
 	tipo: "Processador (CPU)",
-	modelo: "Nintel Kore i5-10400",
+	modelo: "Nintel Kore i5-10400, 6-Core / 12-Thread, 2.9GHz (Turbo 4.3GHz)",
 	state: true,
 	connected: true,
-	desc: "A CPU (Unidade Central de Processamento), ou processador, é o 'cérebro' do computador. Sua função é interpretar e executar a maioria dos comandos, realizando os cálculos que fazem o sistema operacional e os programas funcionarem. Sua velocidade afeta diretamente a agilidade geral do PC."
+	descricao: "A CPU (Unidade Central de Processamento), ou processador, é o 'cérebro' do computador. Sua função é interpretar e executar a maioria dos comandos, realizando os cálculos que fazem o sistema operacional e os programas funcionarem. Sua velocidade afeta diretamente a agilidade geral do PC."
 };
 global.gpu = {
 	tipo: "Placa de Vídeo (GPU)",
-	modelo: "MVIDIA ZTX 1650",
+	modelo: "MVIDIA ZTX 1650 4GB GDDR5",
 	state: true,
 	connected: true,
-	descricao_tecnica: "A GPU (Unidade de Processamento Gráfico), ou Placa de Vídeo, é a responsável por criar tudo o que você vê na tela. Ela processa dados gráficos para gerar imagens, vídeos e as cenas 3D dos jogos, aliviando a carga de trabalho da CPU para essas tarefas visuais."
+	descricao: "A GPU (Unidade de Processamento Gráfico), ou Placa de Vídeo, é a responsável por criar tudo o que você vê na tela. Ela processa dados gráficos para gerar imagens, vídeos e as cenas 3D dos jogos, aliviando a carga de trabalho da CPU para essas tarefas visuais."
 };
 global.ram = {
-	tipo: "Memória RAM",
-	modelo: "8 GB DDR4",
-	state: false,
+	tipo: "Memória RAM (DDR4)",
+	modelo: "4GB DDR4 2666MHz (2x 4GB)",
+	state: true,
 	connected: true,
-	descricao_tecnica: "A Memória RAM é a 'mesa de trabalho' do computador. É uma memória ultrarrápida que guarda temporariamente os dados dos programas em uso. Mais RAM permite executar mais tarefas ao mesmo tempo sem lentidão, mas seu conteúdo é apagado quando o PC desliga."
+	descricao: "A Memória RAM é a 'mesa de trabalho' do computador. É uma memória ultrarrápida que guarda temporariamente os dados dos programas em uso. Mais RAM permite executar mais tarefas ao mesmo tempo sem lentidão, mas seu conteúdo é apagado quando o PC desliga."
 };
 
 global.parts = [global.hd, global.power, global.board,global.cpu, global.cooler, global.gpu, global.ram]
@@ -94,8 +163,9 @@ function encontrar_pecas_defeituosas() {
 }
 
 global.tornon = false;
-global.selected = noone
 global.powered = false;
+global.selected = noone
+
 
 
 global.interact = noone //interação das peças
@@ -138,6 +208,8 @@ tutorial_gabinete = true;
 tutorial_setas = true;
 tutorial_pecas = true;
 tutorial_inspecao = true;
+tutorial_peca2 = true;
+tutorial_final_perdeu = true
 
 mensagem = [
 	// Parte 1: Introdução ao problema

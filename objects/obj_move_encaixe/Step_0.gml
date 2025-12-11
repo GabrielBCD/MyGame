@@ -1,4 +1,4 @@
-var _desabilitadores = instance_exists(obj_dialogo_npc) or instance_exists(obj_mochila)
+var _desabilitadores = instance_exists(obj_dialogo_npc) or instance_exists(obj_mochila) or instance_exists(obj_janela_simples)
 
 if (!_desabilitadores){
 switch (state) {
@@ -14,10 +14,10 @@ switch (state) {
 		cursor_sprite = spr_mouse_move;
 		//image_index = 1;
 		depth = -1;
-		global.selected = self
+		global.selected = name
 		break;
 	case 2: //Logo após ser solto pelo mouse
-		if (condicaoextra){
+		if (condicaoextra and global.state_pc == "GABINETE_LF"){
 			if (place_meeting(x,y,colisor)){
 				x = colisor.x;
 				y = colisor.y;

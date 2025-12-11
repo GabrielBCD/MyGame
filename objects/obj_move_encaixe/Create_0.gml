@@ -7,3 +7,5 @@ colisor = obj_gabinete
 selected = 0;
 lerp_ = 0.5;
 condicaoextra = false
+
+name = ""

@@ -1,6 +1,6 @@
 #region //Setas e srites
 
-if (global.state_pc != "PC") {
+if (global.state_pc != "PC" and global.state_pc != "NOONE") {
 	instance_activate_object(click_04)
 }
 
@@ -123,7 +123,6 @@ switch (global.state_pc){
 
 #endregion
 
-
 #region Etapas dos dialogos do tutorial e Dicas
 
 if (primeira_dica = true) {
@@ -189,15 +188,42 @@ if (tutorial_pecas and !tutorial_setas and global.state_pc == "GABINETE_LF") {
 
 var _tutorial_inspecao = [
 	"Agora que a peça está fora, podemos fazer uma vistoria detalhada.",
-	"Clique nela novamente na lista para abrir a janela de manutenção.",
+	"Primeiro: verifique as informações da fonte clicando no canto inferior esquerdo",
+	"Após ver as informações da fonte clique lista para abrir a janela de manutenção."
 ]
 
 if (tutorial_inspecao == true and global.power.connected == false){
 	criar_dialogo_npc(_tutorial_inspecao, spr_npc_2_head, "Samuel")
 	tutorial_inspecao = false
 	global.dica_atual = [
-		"Selecione a peça correta para essa ação."
+		"Selecione o multimetro para essa ação."
 	]
 }
+
+// --- Coloque este código no Evento Step do seu objeto "Controlador" ---
+
+var _tutorial_peca_reserva = [
+	"Agora que pegamos a fonte reserva, vamos voltar de onde paramos",
+	"Volte ao teste da fonte."
+]
+
+// 1. O "GATILHO" PRINCIPAL: Verificamos se o evento "queimou" acabou de acontecer
+if (global.queimou == true) {
+    
+    if (global.fonte_reserva == true and tutorial_peca2 == true){
+        
+        criar_dialogo_npc(_tutorial_peca_reserva, spr_npc_2_head, "Samuel");
+        tutorial_peca2 = false; // Marcamos que este tutorial já foi dado
+		global.queimou = false;
+        
+        global.qtd_queimadas++;
+        
+        global.dica_atual = [
+            "Dessa vez. Liguea a fonte na tomada correta"
+        ];
+    }
+   
+}
+
 
 #endregion

@@ -1,5 +1,5 @@
 //Este objeto cria as colunas e linhas de seleção de fase
-cow = 3;
+cow = 2;
 row = 1;
 var _xgui = (obj_folder).x - 260
 var _ygui = (obj_folder).y + 100

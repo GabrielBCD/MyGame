@@ -1,6 +1,7 @@
 // Define o estado inicial dos componentes. 
 // Altere para false para simular a ausência do componente
 
+
 if (global.state_pc == "GABINETE_F") {
 	if (global.powered){
 		if (global.hd.connected){

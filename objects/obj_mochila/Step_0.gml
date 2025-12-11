@@ -61,7 +61,7 @@ if (mouse_check_button_pressed(mb_left)) {
                 
             case 1:
                 // Ação para o item 2
-                show_debug_message("Usou Item 2!");
+                show_debug_message("Usou Item 2!")
 				criar_dialogo_npc(mensagem_padrao, spr_npc_2_head, "Samuel")
                 break;
 
@@ -70,18 +70,21 @@ if (mouse_check_button_pressed(mb_left)) {
                 show_debug_message("Usou Item 3!");
                 if (global.interact == "power"){
 					room_goto(rm_level_interact_power)
+					instance_destroy()
 				} else {
 					criar_dialogo_npc(mensagem_padrao, spr_npc_2_head, "Samuel")
 				}
+				break;
+				
             case 3:
                 // Ação para o item 4
-                show_debug_message("Usou Item 4!");
+                show_debug_message("Usou Item 4")
 				criar_dialogo_npc(mensagem_padrao, spr_npc_2_head, "Samuel")
                 break;
 
             case 4:
                 // Ação para o item 5
-                show_debug_message("Usou Item 5!");
+                show_debug_message("Usou Item 5")
 				criar_dialogo_npc(mensagem_padrao, spr_npc_2_head, "Samuel")
                 break;
                 

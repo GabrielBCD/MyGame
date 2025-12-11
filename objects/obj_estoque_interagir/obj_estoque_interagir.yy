@@ -3,6 +3,7 @@
   "%Name":"obj_estoque_interagir",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_estoque_interagir",
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_arvore",
-    "path":"sprites/spr_arvore/spr_arvore.yy",
+    "name":"spr_mesa_pecas",
+    "path":"sprites/spr_mesa_pecas/spr_mesa_pecas.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,6 +1,10 @@
 // MENSAGENS E AÇÕES
 
-mensagem_padrao = "Você não pode usar isso agora."
+mensagem_padrao = [
+
+"Você não pode usar isso agora."
+
+]
 
 // --- CONFIGURAÇÃO DA MOCHILA ---
 

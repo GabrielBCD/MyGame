@@ -98,7 +98,7 @@ if (array_length(_pecas_com_problema) > 0) {
         _mensagem_diagnostico += "- " + _pecas_com_problema[_i] + "\n";
     }
     
-	//Dependendo da peça com defeito organizar o diagnostico e/ou dica do npc baseado nas interações dele
+	//Dependendo da peça com defeito organizar o diagnostico e/ou dica do npc baseado nas interações dele na hora de ligar
 	
 	//
 	//

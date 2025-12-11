@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_item_desc",
+  "%Name":"obj_multimetro",
   "eventList":[],
   "managed":true,
-  "name":"obj_item_desc",
+  "name":"obj_multimetro",
   "overriddenProperties":[],
   "parent":{
-    "name":"Interface",
-    "path":"folders/Objetos/Interface.yy",
+    "name":"interacao fonte",
+    "path":"folders/Objetos/Fase01/interacao fonte.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_multimetro",
+    "path":"sprites/spr_multimetro/spr_multimetro.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

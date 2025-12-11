@@ -12,8 +12,8 @@
   "name":"obj_pc_controller_02",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controller",
-    "path":"folders/Objetos/Objetos de Fase/Controller.yy",
+    "name":"Objetos de Fase",
+    "path":"folders/Objetos/Objetos de Fase.yy",
   },
   "parentObjectId":null,
   "persistent":false,

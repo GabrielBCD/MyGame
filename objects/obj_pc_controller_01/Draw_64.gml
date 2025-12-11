@@ -10,7 +10,7 @@ var _my = device_mouse_y_to_gui(0);
 // Verifica se o botão esquerdo do mouse foi pressionado nesta frame
 var _clicked = mouse_check_button_pressed(mb_left);
 
-var _desabilitadores = instance_exists(obj_dialogo_npc) or instance_exists(obj_mochila)
+var _desabilitadores = instance_exists(obj_dialogo_npc) or instance_exists(obj_mochila) or instance_exists(obj_janela_simples)
 
 // Verifica se o jogador pode interagir com a peça (desmonte)
 if global.state_pc == "PC" or global.state_pc == "MONITOR" {
@@ -30,7 +30,7 @@ var _list_x = 8;
 var _list_y = 220;
 var _line_height = 25; // Espaçamento entre os nomes
 
-if (global.state_pc == "PC" or tutorial_pecas = true){
+if (global.state_pc == "PC" or tutorial_pecas = true or global.state != "game"){
 	//fodase
 } else {
 	// Desenha o título (sem efeito de hover)
